@@ -95,8 +95,8 @@
         ,
 		{
 			"package_version": "1.2.19",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.18/PaperMarioTrackerPhantom.zip",
-			"sha256": "29BB721683B5F550D68F3CE294122FF43BA3EFC51C37447E64AF6B967917E15E",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.19/pmrjuly.zip",
+			"sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
 			"changelog": [
 				"Fix for most ids and rules"
 			]
