@@ -34,12 +34,11 @@ function DungeonAccessible(dungeon)
         ToyBoxEntranceAccess,
         VolcanoEntranceAccess,
         FlowerFieldsGateAccess,
-        CrystalPalaceEntranceAccess,
-        BowsersCastleEntranceAccess
+        CrystalPalaceEntranceAccess
     }
 
     if hasItem("dungeon_setting") then
-        for i=1,8,1 do
+        for i=1,7,1 do
             local dungeon_entrance = "ch"..i.."_dungeon_0"
             if itemStage(dungeon_entrance) == dungeon then
                 return entranceAccessibleFn[i]()
@@ -52,40 +51,21 @@ function DungeonAccessible(dungeon)
     return entranceAccessibleFn[dungeon]()
 end
 
-function SewersShortcutPipesAccess()
-    local boots = hasItem("boots")
-    local boots3 = hasItem("boots3")
-    local hammer2 = hasItem("hammer2")
-
-    if ToadTownAccess() then
-        if boots and hammer2 then
-            return true
-        elseif boots3 then
-            return true, AccessibilityLevel.SequenceBreak
-        elseif parakarry() and hammer2 and KoopaVillageAccess() then
-            return true, AccessibilityLevel.SequenceBreak
-        end
-    end
-    return false
-end
-
 --[[----------------------------------------------------------
     Prologue Region Access
 ------------------------------------------------------------]]
 function GoombaVillageAccess()
     if ToadTownAccess() then
-        -- glitchless path
         local open_prologue = hasItem("open_prologue")
+        local boots = hasItem("boots")
+        local hammer2 = hasItem("hammer2")
         if open_prologue and canClimbShortLedges() and canBreakYellowBlocks() then
             return true
-        end
-
-        -- clip through yellow block from the right
-        if open_prologue and canClimbShortLedges() then
-            return true, AccessibilityLevel.SequenceBreak
+        elseif boots and hammer2 then
+            return true
         end
     end
-    return SewersShortcutPipesAccess()
+    return false
 end
 
 function GoombaRoadAccess()
@@ -96,32 +76,15 @@ function GoombaRoadAccess()
 
         if open_prologue and (canClimbShortLedges()) then
             return true
+        elseif boots and hammer2 then
+            return true
         end
-    end
-    local shortcut_access,level = SewersShortcutPipesAccess()
-    return shortcut_access and canBreakYellowBlocks(), level
-end
-
--- assume goomba village access
-function GoombaPlaygroundAccess()
-    if canBreakYellowBlocks() then
-        return true
-    elseif canDoLakiTeleports() then
-        return true, AccessibilityLevel.SequenceBreak
     end
     return false
 end
 
 function BlueHousePipeAccess()
-    if ToadTownAccess() and canClimbShortLedges() then
-        if hasItem("oddkey_base") or hasItem("open_blue_house") then
-            return true
-        elseif canDoBHS() or canDoLakiClips() or canDoToadLureHammerClip() then
-            return true, AccessibilityLevel.SequenceBreak
-        end
-    end
-
-    return false
+    return ToadTownAccess() and canClimbShortLedges() and (hasItem("oddkey_base") or hasItem("open_blue_house"))
 end
 
 function ToadTownAccess()
@@ -136,11 +99,11 @@ end
     Chapter 1 Region Access
 ------------------------------------------------------------]]
 function KoopaVillageAccess()
-    return ToadTownAccess() and canHitTrees() and canClimbShortLedges()
+    return ToadTownAccess() and canBreakYellowBlocks() and canClimbShortLedges()
 end
 
 function KoloradoAccess()
-    if DryDryDesertAccess() or (hasItem("mamar") and KoopaVillageAccess()) then
+    if DryDryDesertAccess() or (has("mamar") and KoopaVillageAccess()) then
         return true
     end
     return false
@@ -178,37 +141,10 @@ end
 function MtRuggedAccess()
     -- TODO: first check if Desert Start
     if ToadTownAccess() then
-        local logical = false
-        local can_access = false
-
         local boots = hasItem("boots")
-        local from_train = hasItem("open_mt_rugged") or bombette()
-        if from_train then
-            if boots then
-                logical = true
-                can_access = true
-            elseif canDoClippy() and canDoLakiTeleports() then
-                can_access = true
-            end
-        end
-
-        local from_sewers,level = SewersShortcutPipesAccess()
-        if from_sewers then
-            can_access = true
-            if ~logical then
-                if level == nil then
-                    logical = true
-                end
-            end
-        end
-        
-        if can_access then
-            if logical then
-                return true
-            else
-                return true, AccessibilityLevel.SequenceBreak
-            end
-        end
+        local from_train = (hasItem("open_mt_rugged") or bombette()) and boots
+        local from_sewers = boots and hasItem("hammer2")
+        return from_train or from_sewers
     end
 
     return false
@@ -234,8 +170,7 @@ function BoosMansionPipeRoomAccess()
         if hasItem("boots2") then
             return true
         else
-            blue_house_access,level = BlueHousePipeAccess()
-            return (hasItem("boots") and sushie() and bombette() and blue_house_access), level
+            return sushie() and bombette() and BlueHousePipeAccess()
         end
     end
     return false
@@ -244,13 +179,12 @@ end
 function BoosMansionAccess()
     if ToadTownAccess() then
         local forest_pass = hasItem("forest_pass_base") or hasItem("open_forest")
+        local mansion_room = (BoosMansionPipeRoomAccess() or forest_pass)
         -- logically need boots to enter mansion
-        if forest_pass and hasItem("boots") then
-            return true
-        elseif forest_pass and parakarry() then
+        if hasItem("boots") then
+            return mansion_room
+        elseif parakarry() then
             return mansion_room, AccessibilityLevel.SequenceBreak
-        else
-            return BoosMansionPipeRoomAccess()
         end
     end
     return false
@@ -264,26 +198,15 @@ function ForeverForestAccess()
         if forest_pass then
             return true
         else
-            return BoosMansionPipeRoomAccess(), AccessibilityLevel.SequenceBreak
+            return (BoosMansionPipeRoomAccess() and boots), AccessibilityLevel.SequenceBreak
         end
     end
     return false
 end
 
 function GustyGulchAccess()
-    local boos_mansion_access,level = BoosMansionAccess()
-    if boos_mansion_access then
-        if hasItem("boo_portrait_base") then
-            if hasItem("boots") or hasItem("weight_base") then
-                return true, level
-            end
-        end
-    end
-
-    local forest_pass = hasItem("forest_pass_base") or hasItem("open_forest")
-    local ch3_shortcut,level = BoosMansionPipeRoomAccess()
-    if (forest_pass or ch3_shortcut) and (canDoLakiTeleports() or canDoLZS()) then
-        return true, AccessibilityLevel.SequenceBreak
+    if hasItem("boo_portrait_base") and hasItem("boots") then
+        return BoosMansionAccess()
     end
     return false
 end
@@ -291,8 +214,6 @@ end
 function TubbaCastleEntranceAccess()
     if parakarry() then
         return GustyGulchAccess()
-    elseif hasItem("boots") or canDoClippy() then
-        return GustyGulchAccess(), AccessibilityLevel.SequenceBreak
     end
     return false
 end
@@ -305,15 +226,7 @@ end
     Chapter 4 Region Access
 ------------------------------------------------------------]]
 function ToyBoxEntranceAccess()
-    if ToadTownAccess() then
-        local front_door = bow() or hasItem("open_toy_box")
-        if front_door then
-            return canClimbShortLedges()
-        elseif canDoToadLureHammerClip() then
-            return canClimbShortLedges(), AccessibilityLevel.SequenceBreak
-        end
-    end
-    return false
+    return ToadTownAccess() and (bow() or hasItem("open_toy_box")) and (hasItem("boots") or parakarry())
 end
 
 function ToyBoxAccess()
@@ -321,18 +234,13 @@ function ToyBoxAccess()
 end
 
 function ToyBoxPinkAccess()
-    local can_place_train,level = ToyBoxEntranceAccess()
-    if ToyBoxAccess() then
-        return hasItem("boots") and hasItem("toy_train_base"), level
-    end
-    return false
+    return ToyBoxAccess() and ToyBoxEntranceAccess() and hasItem("boots") and hasItem("toy_train_base")
 end
 
 function ToyBoxGreenAccess()
-    local can_take_train,level = ToyBoxPinkAccess()
-    if can_take_train then
+    if ToyBoxPinkAccess() then
         if cookingAvailable() and hasItem("cakemix") and hasItem("cake") then
-            return true, level
+            return true
         elseif hasItem("cake") then
             return true, AccessibilityLevel.SequenceBreak -- out of logic
         end
@@ -362,14 +270,13 @@ function YoshisIslandAccess()
     local boots2 = hasItem("boots2")
     local hammer = hasItem("hammer")
     local bombette = bombette()
-    local blue_house_access,level = BlueHousePipeAccess()
 
     -- Whale
     if hasItem("open_whale") or ((boots2 or hammer or bombette) and watt()) then
         return true
     -- shortcut pipe through blue house
-    elseif blue_house_access and bombette then
-        return true, level
+    elseif BlueHousePipeAccess() and bombette then
+        return true
     -- shortcut pipe through main sewer entrance
     elseif boots2 and sushie() then
         return true
@@ -378,15 +285,7 @@ function YoshisIslandAccess()
 end
 
 function VolcanoEntranceAccess()
-    local ch5_access,level = YoshisIslandAccess()
-    if ch5_access then
-        if sushie() and hasItem("jade_raven_base") and hasItem("boots") and hasItem("hammer") then
-            return true, level
-        elseif parakarry() or canClimbWeirdGeometry() or canDoLakiTeleports() then
-            return true, AccessibilityLevel.SequenceBreak
-        end
-    end
-    return false
+    return YoshisIslandAccess() and sushie() and hasItem("jade_raven_base") and hasItem("boots") and hasItem("hammer")
 end
 
 function VolcanoAccess()
@@ -397,7 +296,7 @@ end
     Chapter 6 Region Access
 ------------------------------------------------------------]]
 function FlowerFieldsGateAccess()
-    return ToadTownAccess() and hasItem("seed1") and hasItem("seed2") and hasItem("seed3") and hasItem("seed4")
+    return ToadTownAccess() and (hasItem("seeds_o4") or ( hasItem("seed1") and hasItem("seed2") and hasItem("seed3") and hasItem("seed4")))
 end
 
 function FlowerFieldsAccess()
@@ -409,17 +308,14 @@ end
 ------------------------------------------------------------]]
 function ShiverCityAccess()
     if ToadTownAccess() then
-        local blue_house_access,level = BlueHousePipeAccess()
         -- bridge room access
-        if (blue_house_access and bombette()) or (hasItem("boots2") and sushie()) then
+        if (BlueHousePipeAccess() and bombette()) or (hasItem("boots2") and sushie()) then
             -- cross already open bridge
             if hasItem("open_ch7_bridge") then
-                return canClimbShortLedges(), level
+                return canClimbShortLedges()
             -- activate bridge
             elseif hasItem("boots3") then
-                return hiddenBlocks(), level
-            elseif hasItem("boots2") then
-                return true, AccessibilityLevel.SequenceBreak
+                return hiddenBlocks()
             end
         end
     end
@@ -443,16 +339,4 @@ end
 
 function CrystalPalaceAccess()
     return DungeonAccessible(7)
-end
-
---[[----------------------------------------------------------
-    Chapter 8 Region Access
-------------------------------------------------------------]]
-function BowsersCastleEntranceAccess()
-    -- need a way to verify star road access
-    return true
-end
-
-function BowsersCastleAccess()
-    return DungeonAccessible(8)
 end

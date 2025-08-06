@@ -30,6 +30,7 @@
     {
         "name": "Blue Berry",
         "type": "consumable",
+        "base_item": "blue_berry_base",
         "img": "images/ch6/PaperMario_Items_BlueBerry.png",
         "max_quantity": 2,
         "codes": "blue_berry"
@@ -50,10 +51,32 @@
     },
     {
         "name": "Magical Seed 1",
-        "type": "toggle",
-        "img": "images/ch6/MagicalSeed1.png",
-        "codes": "seed1",
-        "loop": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/ch6/seeds_0.png",
+                "inherit_codes": false,
+                "img_mods": "@disabled",
+                "codes": "seeds"
+            },
+            {
+                "img": "images/ch6/seeds_1.png",
+                "codes": "seeds_o1"
+            },
+            {
+                "img": "images/ch6/seeds_2.png",
+                "codes": "seeds_o2"
+            },
+            {
+                "img": "images/ch6/seeds_3.png",
+                "codes": "seeds_o3"
+            },
+            {
+                "img": "images/ch6/seeds_all.png",
+                "codes": "seeds_o4"
+            }
+        ]
     },
     {
         "name": "Magical Seed 2",
