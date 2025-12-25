@@ -100,6 +100,14 @@
 			"changelog": [
 				"Fix for most ids and rules"
 			]
+		},
+		{
+			"package_version": "1.2.21",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.21/PaperMarioObsidian.zip",
+			"sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
+			"changelog": [
+				"Changes to AP item names"
+			]
 		}
 	]
 }
