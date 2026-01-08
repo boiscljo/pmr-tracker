@@ -108,6 +108,14 @@
 			"changelog": [
 				"Changes to AP item names"
 			]
+		},
+		{
+			"package_version": "1.2.22",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.22/PaperMarioObsidian.zip",
+			"sha256": "7a7bb29e81625053cbde266a67f0e1f164642f49bb4a7de5b2702d6b390b6c33",
+			"changelog": [
+				"Changes to AP item names"
+			]
 		}
 	]
 }
