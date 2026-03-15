@@ -112,9 +112,25 @@
 		{
 			"package_version": "1.2.22",
 			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.22/PaperMarioObsidian.zip",
-			"sha256": "7a7bb29e81625053cbde266a67f0e1f164642f49bb4a7de5b2702d6b390b6c33",
+			"sha256": "ad8131200e49589a7f4ba5b7f7599f6f9c4b18066ffecc24dfc10aa1c1b727dd",
 			"changelog": [
 				"Changes to AP item names"
+			]
+		},
+		{
+			"package_version": "1.2.23",
+			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.23/PaperMarioFouton.zip",
+			"sha256": "d7726052a2d1d0eead586562f85bc5f599e06425d23dc88581d182d732260a08",
+			"changelog": [
+				"Fixes to logic and code"
+			]
+		},
+		{
+			"package_version": "1.2.24",
+			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.24/PaperMarioFouton.zip",
+			"sha256": "4899844e455f0d7ed3d5645f0de04c29ce157eec499fc629c2e9350941e68c20",
+			"changelog": [
+				"Added Partner Upgrades to Tracker"
 			]
 		}
 	]
