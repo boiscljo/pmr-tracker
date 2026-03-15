@@ -256,10 +256,10 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['magic_seeds'] then
+    if slot_data['magical_seeds'] then
         local obj = Tracker:FindObjectForCode('seeds')
         if obj then
-            obj.CurrentStage = slot_data['magic_seeds']
+            obj.CurrentStage = slot_data['magical_seeds']
         end
     end
 end
@@ -277,10 +277,10 @@ function onItem(index, item_id, item_name, player_number)
     end
     local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
-    local v = ITEM_MAPPING[item_name]
+    local v = ITEM_MAPPING[item_id]
     if not v then
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onItem: could not find item mapping for id %s", item_name))
+            print(string.format("onItem: could not find item mapping for id %s", item_id))
         end
         return
     end
