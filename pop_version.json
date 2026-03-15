@@ -132,6 +132,14 @@
 			"changelog": [
 				"Added Partner Upgrades to Tracker"
 			]
+		},
+		{
+			"package_version": "1.2.25",
+			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.25/PaperMarioFouton.zip",
+			"sha256": "03109a3f4cb9862e5230965113ed0b75de4809a958e66a853482d50f6bb260c0",
+			"changelog": [
+				"Small Logix Fixes"
+			]
 		}
 	]
 }
