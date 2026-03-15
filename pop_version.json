@@ -140,6 +140,14 @@
 			"changelog": [
 				"Small Logix Fixes"
 			]
+		},
+		{
+			"package_version": "1.2.26",
+			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.26/PaperMarioFouton.zip",
+			"sha256": "cf7aa8a40e1ae82d508c0fc717c154834ee415bbdbbf4180d973279d859fec0f",
+			"changelog": [
+				"Settings Autotracking Fixes"
+			]
 		}
 	]
 }
