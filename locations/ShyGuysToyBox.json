@@ -368,7 +368,7 @@
 					},
 					{
 						"name": "Multicoin Block",
-						"access_rules": ["$bow"],
+						"access_rules": ["$bow, $parakarry, boots"],
 						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
 						"item_count": 1
 					},
