@@ -167,7 +167,7 @@
 			},
 			{
 				"name": "Hidden Block",
-				"access_rules": ["$hiddenBlocks, cake, [$cookingAvailable], [cakemix]"],
+				"access_rules": ["$hiddenBlocks, cake, [$cookingAvailable], [cakemix]", "$hiddenBlocks, [cake], $cookingAvailable, cakemix"],
 				"visibility_rules": ["$ch4Required"],
 				"item_count": 1
 			},
@@ -202,7 +202,7 @@
 					},
 					{
 						"name": "Groove Guy Coin Blocks",
-						"access_rules": ["cake, [$cookingAvailable], [cakemix]"],
+						"access_rules": ["cake, [$cookingAvailable], [cakemix]", "[cake], $cookingAvailable, cakemix"],
 						"visibility_rules": ["coin_block_setting, $ch4Required"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
@@ -210,7 +210,7 @@
 					},
 					{
 						"name": "Multicoin Block",
-						"access_rules": ["cake, [$cookingAvailable], [cakemix]"],
+						"access_rules": ["cake, [$cookingAvailable], [cakemix]", "[cake], $cookingAvailable, cakemix"],
 						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
 						"item_count": 1
 					}
@@ -227,7 +227,7 @@
 				"name": "Gourmet Guy",
 				"chest_unopened_img": "images/chests/generic.png",
 				"chest_opened_img": "images/chests/generic_checked.png",
-				"access_rules": ["cake, [$cookingAvailable], [cakemix]"],
+				"access_rules": ["cake, [$cookingAvailable], [cakemix]", "[cake], $cookingAvailable, cakemix"],
 				"sections": [
 					{
 						"name": "Gourmet Guy",
@@ -368,7 +368,7 @@
 					},
 					{
 						"name": "Multicoin Block",
-						"access_rules": ["$bow"],
+						"access_rules": ["$bow, $parakarry, boots"],
 						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
 						"item_count": 1
 					},

@@ -165,10 +165,10 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['coin_blocks'] then
+    if slot_data['super_multi_blocks'] then
         local obj = Tracker:FindObjectForCode('multicoin_setting')
         if obj then
-            obj.Active = slot_data['coin_blocks']
+            obj.Active = slot_data['super_multi_blocks']
         end
     end
 
@@ -179,10 +179,10 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['partners_always_usuable'] then
-        local obj = Tracker:FindObjectForCode('parners_always')
+    if slot_data['partners_always_usable'] then
+        local obj = Tracker:FindObjectForCode('partners_always')
         if obj then
-            obj.Active = slot_data['partners_always_usuable']
+            obj.Active = slot_data['partners_always_usable']
         end
     end
 
@@ -249,17 +249,10 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['open_whale'] then
-        local obj = Tracker:FindObjectForCode('open_twhale')
-        if obj then
-            obj.Active = slot_data['open_whale']
-        end
-    end
-
-    if slot_data['magic_seeds'] then
+    if slot_data['magical_seeds'] then
         local obj = Tracker:FindObjectForCode('seeds')
         if obj then
-            obj.CurrentStage = slot_data['magic_seeds']
+            obj.CurrentStage = slot_data['magical_seeds']
         end
     end
 end

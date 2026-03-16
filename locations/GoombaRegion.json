@@ -263,7 +263,7 @@
 		"sections":[
 			{
 				"name": "Ledge Star Piece",
-				"access_rules": ["$canClimbShortLedges"],
+				"access_rules": ["boots"],
 				"visibility_rules": [],
 				"capture_item": true,
 				"item_count": 1

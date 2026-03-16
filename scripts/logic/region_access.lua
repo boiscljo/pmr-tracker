@@ -103,7 +103,7 @@ function KoopaVillageAccess()
 end
 
 function KoloradoAccess()
-    if DryDryDesertAccess() or (has("mamar") and KoopaVillageAccess()) then
+    if DryDryDesertAccess() or (hasItem("mamar") and KoopaVillageAccess()) then
         return true
     end
     return false
@@ -133,6 +133,18 @@ function DryDryDesertAccess()
 
         -- can traverse mt rugged to get to the desert
         return (hasItem("open_mt_rugged") or bombette()) and boots and parakarry()
+    end
+
+    return false
+end
+
+function FrontMtRuggedAccess()
+    -- TODO: first check if Desert Start
+    if ToadTownAccess() then
+        local boots = hasItem("boots")
+        local from_train = (hasItem("open_mt_rugged") or bombette())
+        local from_sewers = boots and hasItem("hammer2")
+        return from_train or from_sewers
     end
 
     return false
@@ -241,7 +253,7 @@ function ToyBoxGreenAccess()
     if ToyBoxPinkAccess() then
         if cookingAvailable() and hasItem("cakemix") and hasItem("cake") then
             return true
-        elseif hasItem("cake") then
+        elseif hasItem("cake") or (hasItem("cakemix") and hasItem("cake")) then
             return true, AccessibilityLevel.SequenceBreak -- out of logic
         end
     end
