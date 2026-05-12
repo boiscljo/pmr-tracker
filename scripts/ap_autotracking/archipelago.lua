@@ -293,6 +293,8 @@ function onItem(index, item_id, item_name, player_number)
             else
                 obj.Active = true
             end
+        elseif v[2] == "progressive_toggle" then
+            obj.CurrentStage = obj.CurrentStage + 1
         elseif v[2] == "consumable" then
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
