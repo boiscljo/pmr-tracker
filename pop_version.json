@@ -151,8 +151,24 @@
 		},
 		{
 			"package_version": "1.2.26",
-			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.26/PaperMarioFouton.zip",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.26/pmr-tracker-1.2.26.zip",
 			"sha256": "cf7aa8a40e1ae82d508c0fc717c154834ee415bbdbbf4180d973279d859fec0f",
+			"changelog": [
+				"Settings Autotracking Fixes"
+			]
+		},
+        {
+			"package_version": "1.2.27",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.27/pmr-tracker-1.2.27.zip",
+			"sha256": "64ae8a6b460b313ceafb664d66e630ce10f1a5fc9419d43eae8ffd93feb3b2f7",
+			"changelog": [
+				"Settings Autotracking Fixes"
+			]
+		},
+           {
+			"package_version": "1.2.28",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.28/pmr-tracker-1.2.28.zip",
+			"sha256": "68d2cbde487bd3b206906b200d9412c5c49de6c394eac3f0dbc153d1fc549b89",
 			"changelog": [
 				"Settings Autotracking Fixes"
 			]
