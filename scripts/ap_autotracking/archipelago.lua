@@ -252,7 +252,7 @@ function onClear(slot_data)
     if slot_data['magical_seeds'] then
         local obj = Tracker:FindObjectForCode('seeds')
         if obj then
-            obj.CurrentStage = slot_data['magical_seeds']
+            obj.CurrentStage = 4 - slot_data['magical_seeds']
         end
     end
 end
