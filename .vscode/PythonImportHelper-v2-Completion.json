@@ -1,0 +1,20 @@
+[
+    {
+        "label": "lines",
+        "kind": 5,
+        "importPath": "scripts.ap_autotracking.update_indexes",
+        "description": "scripts.ap_autotracking.update_indexes",
+        "peekOfCode": "lines = \"\"\nwith open(\"location_mapping.lua\", \"r\") as f:\n  lines = f.readlines()\n  f.close()\ni = 0\nfor k,line in enumerate(lines):\n  i += 1\n  if i > 717:\n    break\n  if i > 169:",
+        "detail": "scripts.ap_autotracking.update_indexes",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "scripts.ap_autotracking.update_indexes",
+        "description": "scripts.ap_autotracking.update_indexes",
+        "peekOfCode": "i = 0\nfor k,line in enumerate(lines):\n  i += 1\n  if i > 717:\n    break\n  if i > 169:\n    value = int(line[5:15])\n    old = value\n    value += 1\n    lines[k] = line.replace(str(old), str(value))",
+        "detail": "scripts.ap_autotracking.update_indexes",
+        "documentation": {}
+    }
+]
