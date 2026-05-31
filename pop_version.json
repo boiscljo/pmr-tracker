@@ -165,5 +165,14 @@
 				"Settings Autotracking Fixes"
 			]
 		}
+        ,
+           {
+			"package_version": "1.2.29",
+			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.29/pmr-tracker-1.2.29.zip",
+			"sha256": "03b117735059601ebada093d550209fbc2bb68ec2e8dc4c43a579078f799431e",
+			"changelog": [
+				"Fix to partners"
+			]
+		}
 	]
 }

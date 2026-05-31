@@ -160,7 +160,7 @@
 					},
 					{
 						"name": "Raphael",
-						"access_rules": ["jade_raven_base, $sushie, $canClimbShortLedges"],
+						"access_rules": ["jade_raven_base, $sushie, hammer, boots"],
 						"visibility_rules": ["$ch5Required"],
 						"item_count": 1
 					}
