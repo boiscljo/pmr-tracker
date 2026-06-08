@@ -118,6 +118,11 @@
 						"item_count": 1
 					},
 					{
+						"name": "Multicoin Block",
+						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch3Required"],
+						"item_count": 1
+					},
+					{
 						"name": "Block at Top of Hill",
 						"visibility_rules": ["coin_block_setting, $ch3Required"],
 						"chest_unopened_img": "images/chests/coin.png",
@@ -127,11 +132,6 @@
 					{
 						"name": "Item Behind Rock",
 						"visibility_rules": ["$ch3Required"],
-						"item_count": 1
-					},
-					{
-						"name": "Multicoin Block",
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch3Required"],
 						"item_count": 1
 					}
 				],

@@ -436,6 +436,11 @@
 						"item_count": 1
 					},
 					{
+						"name": "Multicoin Block",
+						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
+						"item_count": 1
+					},
+					{
 						"name": "Hidden Block Between Coin Blocks",
 						"access_rules": ["$hiddenBlocks"],
 						"visibility_rules": ["$ch4Required"],
@@ -452,11 +457,6 @@
 						"name": "Hidden Block by Lantern Ghost Door",
 						"access_rules": ["$hiddenBlocks"],
 						"visibility_rules": ["$ch4Required"],
-						"item_count": 1
-					},
-					{
-						"name": "Multicoin Block",
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
 						"item_count": 1
 					},
 					{

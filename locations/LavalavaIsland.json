@@ -160,7 +160,7 @@
 					},
 					{
 						"name": "Raphael",
-						"access_rules": ["jade_raven_base, $sushie, $canClimbShortLedges"],
+						"access_rules": ["jade_raven_base, $sushie, hammer, boots"],
 						"visibility_rules": ["$ch5Required"],
 						"item_count": 1
 					}
@@ -185,12 +185,6 @@
 						"item_count": 1
 					},
 					{
-						"name": "Chest",
-						"access_rules": ["misstar"],
-						"visibility_rules": ["$ch5Required"],
-						"item_count": 1
-					},
-					{
 						"name": "Island Tree",
 						"access_rules": ["$canBreakYellowBlocks, $sushie"],
 						"visibility_rules": ["$ch5Required"],
@@ -201,6 +195,12 @@
 						"access_rules": ["$sushie"],
 						"visibility_rules": ["$ch5Required"],
 						"capture_item": true,
+						"item_count": 1
+					},
+					{
+						"name": "Chest",
+						"access_rules": ["misstar"],
+						"visibility_rules": ["$ch5Required"],
 						"item_count": 1
 					}
 				],
@@ -216,16 +216,11 @@
 				"name": "Island Spear Guy",
 				"sections": [
 					{
-						"name": "Spear Guy Block",
-						"access_rules": ["$canHitBlocks, $sushie"],
-						"visibility_rules": ["$ch5Required"],
+						"name": "Bottom Right Bush",
+						"visibility_rules": ["foliage_setting, $ch5Required"],
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
 						"item_count": 1
-					},
-					{
-						"name": "Purple Yoshi",
-						"access_rules": ["hammer, $sushie"],
-						"visibility_rules": ["$ch5Required"],
-						"hosted_item": "purple_yoshi_kid"
 					},
 					{
 						"name": "Far Right Tree Coin",
@@ -236,6 +231,12 @@
 						"item_count": 1
 					},
 					{
+						"name": "Purple Yoshi",
+						"access_rules": ["hammer, $sushie"],
+						"visibility_rules": ["$ch5Required"],
+						"hosted_item": "purple_yoshi_kid"
+					},
+					{
 						"name": "Bottom Left Bush",
 						"visibility_rules": ["foliage_setting, $ch5Required"],
 						"access_rules": ["hammer, $sushie"],
@@ -244,10 +245,9 @@
 						"item_count": 1
 					},
 					{
-						"name": "Bottom Right Bush",
-						"visibility_rules": ["foliage_setting, $ch5Required"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
+						"name": "Spear Guy Block",
+						"access_rules": ["$canHitBlocks, $sushie"],
+						"visibility_rules": ["$ch5Required"],
 						"item_count": 1
 					}
 				],
@@ -262,36 +262,6 @@
 			{
 				"name": "SW Jade Jungle",
 				"sections": [
-					{
-						"name": "Hidden Block at North Exit",
-						"access_rules": ["$canHitBlocks, $sushie, $hiddenBlocks"],
-						"visibility_rules": ["$ch5Required"],
-						"item_count": 1
-					},
-					{
-						"name": "Tree At North Exit",
-						"access_rules": ["$canBreakYellowBlocks, $sushie"],
-						"visibility_rules": ["foliage_setting, $ch5Required"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
-						"item_count": 1
-					},
-					{
-						"name": "Bush Right of Bell Flower",
-						"access_rules": ["$sushie"],
-						"visibility_rules": ["foliage_setting, $ch5Required"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
-						"item_count": 1
-					},
-					{
-						"name": "Tree by Spear Guy",
-						"access_rules": ["$canBreakYellowBlocks, $sushie"],
-						"visibility_rules": ["foliage_setting, $ch5Required"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
-						"item_count": 1
-					},
 					{
 						"name": "Bottom Right Bush by Sushie Panel",
 						"visibility_rules": ["foliage_setting, $ch5Required"],
@@ -313,10 +283,40 @@
 						"item_count": 3
 					},
 					{
+						"name": "Tree by Spear Guy",
+						"access_rules": ["$canBreakYellowBlocks, $sushie"],
+						"visibility_rules": ["foliage_setting, $ch5Required"],
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
+						"item_count": 1
+					},
+					{
 						"name": "Upgrade Block",
 						"access_rules": ["$canHitBlocks, $sushie"],
 						"visibility_rules": ["upgrades_setting, $ch5Required"],
 						"clear_as_group": false,
+						"item_count": 1
+					},
+					{
+						"name": "Hidden Block at North Exit",
+						"access_rules": ["$canHitBlocks, $sushie, $hiddenBlocks"],
+						"visibility_rules": ["$ch5Required"],
+						"item_count": 1
+					},
+					{
+						"name": "Tree At North Exit",
+						"access_rules": ["$canBreakYellowBlocks, $sushie"],
+						"visibility_rules": ["foliage_setting, $ch5Required"],
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
+						"item_count": 1
+					},
+					{
+						"name": "Bush Right of Bell Flower",
+						"access_rules": ["$sushie"],
+						"visibility_rules": ["foliage_setting, $ch5Required"],
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
 						"item_count": 1
 					}
 				],
@@ -330,17 +330,10 @@
 			},
 			{
 				"name": "NW Jade Jungle",
-				"access_rules": ["$sushie"],
+				"access_rules": ["$sushie"], 
 				"sections": [
 					{
-						"name": "Far Right Tree",
-						"visibility_rules": ["$ch5Required"],
-						"access_rules": ["$canBreakYellowBlocks"],
-						"item_count": 1
-					},
-					{
-						"name": "Tree on Ledge",
-						"access_rules": ["$canClimbShortLedges, $canBreakYellowBlocks"],
+						"name": "Second Bush from Left",
 						"visibility_rules": ["foliage_setting, $ch5Required"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
@@ -354,7 +347,14 @@
 						"item_count": 1
 					},
 					{
-						"name": "Second Bush from Left",
+						"name": "Far Right Tree",
+						"visibility_rules": ["$ch5Required"],
+						"access_rules": ["$canBreakYellowBlocks"],
+						"item_count": 1
+					},
+					{
+						"name": "Tree on Ledge",
+						"access_rules": ["$canClimbShortLedges, $canBreakYellowBlocks"],
 						"visibility_rules": ["foliage_setting, $ch5Required"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
@@ -472,17 +472,17 @@
 										"item_count": 1
 									},
 									{
-										"name": "Pull Tree Vine",
-										"access_rules": ["boots"],
-										"visibility_rules": ["$ch5Required"],
-										"item_count": 1
-									},
-									{
 										"name": "Hit Tree",
 										"visibility_rules": ["foliage_setting, $ch5Required"],
 										"access_rules": ["$canBreakYellowBlocks, $canClimbShortLedges"],
 										"chest_unopened_img": "images/chests/coin.png",
 										"chest_opened_img": "images/chests/coin_checked.png",
+										"item_count": 1
+									},
+									{
+										"name": "Pull Tree Vine",
+										"access_rules": ["boots"],
+										"visibility_rules": ["$ch5Required"],
 										"item_count": 1
 									}
 								],

@@ -78,6 +78,14 @@
 		"access_rules": ["$KoopaVillageAccess"],
 		"sections": [
 			{
+				"name": "Star Piece Panel",
+				"access_rules": ["boots2", "hammer3"],
+				"visibility_rules": ["panels_setting, $ch1Required"],
+				"chest_unopened_img": "images/chests/star_piece.png",
+				"chest_opened_img": "images/chests/star_piece_checked.png",
+				"item_count": 1
+			},
+			{
 				"name": "Item Behind Third Pole",
 				"visibility_rules": ["$ch1Required"],
 				"item_count": 1
@@ -85,14 +93,6 @@
 			{
 				"name": "Brick Block Puzzle",
 				"visibility_rules": ["$ch1Required"],
-				"item_count": 1
-			},
-			{
-				"name": "Star Piece Panel",
-				"access_rules": ["boots2", "hammer3"],
-				"visibility_rules": ["panels_setting, $ch1Required"],
-				"chest_unopened_img": "images/chests/star_piece.png",
-				"chest_opened_img": "images/chests/star_piece_checked.png",
 				"item_count": 1
 			}
 		],
