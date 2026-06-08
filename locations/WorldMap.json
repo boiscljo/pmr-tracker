@@ -268,7 +268,8 @@
 					{"ref": "Fortress Entrance/Jail Cells/Middle Cell"},
 					{"ref": "Fortress Entrance/Bomb Jail/Bombette"},
 					{"ref": "Fortress Entrance/Pit/Pedestal Item"},
-					{"ref": "Fortress Entrance/Cannon Bridge/Block"}
+					{"ref": "Fortress Entrance/Cannon Bridge/Block"},
+					{"ref": "Fortress Entrance/Koopa Bros./Koopa Bros."}
 				],
 				"map_locations": [
 					{
@@ -397,7 +398,8 @@
 					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Ruins Upgrade Block/Upgrade Block"},
 					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Third Sand Room/Item on Ledge"},
 					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Third Sand Room/Lunar Stone Room/Item On Pedestal"},
-					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Ruins Upgrade Block/Diamond Stone Room/Item On Pedestal"}
+					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Ruins Upgrade Block/Diamond Stone Room/Item On Pedestal"},
+					{"ref": "Dry Dry Ruins Entrance/Pokey Room/Ruins Hub Room/Pokey Fight Room/Ruins Hub Room 2/Tutankoopa Room/Tutankoopa"}
 				],
 				"map_locations": [
 					{
@@ -467,7 +469,8 @@
 					{"ref": "Gusty Gulch Entrance/Outside Tubba's Castle/Block by Goomba"},
 					{"ref": "Gusty Gulch Entrance/Outside Tubba's Castle/Block at Top of Hill"},
 					{"ref": "Gusty Gulch Entrance/Outside Tubba's Castle/Item Behind Rock"},
-					{"ref": "Gusty Gulch Entrance/Outside Tubba's Castle/Multicoin Block"}
+					{"ref": "Gusty Gulch Entrance/Outside Tubba's Castle/Multicoin Block"},
+					{"ref": "Gusty Gulch Entrance/Windmill/Tubba Blubba"}
 				],
 				"map_locations": [
 					{
@@ -502,11 +505,6 @@
 			{
 				"name": "Shy Guy's Toybox",
 				"sections": [
-					{"ref": "Blue Station/Shy Guy Room/Shy Guy Items"},
-					{"ref": "Blue Station/Shy Guy Room/Hidden Blocks"},
-					{"ref": "Red Station/Block Barricade/Item Block"},
-					{"ref": "Red Station/Block Barricade/Hidden Coin Block"},
-					{"ref": "Red Station/Block Barricade/Item on Tall Block"},
 					{"ref": "Blue Station/Hidden Block"},
 					{"ref": "Blue Station/Panel Star Piece"},
 					{"ref": "Blue Station/Block City/Item Next to Chest"},
@@ -517,6 +515,11 @@
 					{"ref": "Blue Station/Block City/3 Coin Spring"},
 					{"ref": "Blue Station/Block City/On Top Left Building"},
 					{"ref": "Blue Station/Block City/Behind Fallen Block"},
+					{"ref": "Blue Station/Anti Guy Room/Anti Guy Chest"},
+					{"ref": "Blue Station/Anti Guy Room/Left Block"},
+					{"ref": "Blue Station/Anti Guy Room/Hidden Block"},
+					{"ref": "Blue Station/Shy Guy Room/Shy Guy Items"},
+					{"ref": "Blue Station/Shy Guy Room/Hidden Blocks"},
 					{"ref": "Pink Station/Gourmet Guy/Gourmet Guy"},
 					{"ref": "Pink Station/Gourmet Guy/Coin Blocks"},
 					{"ref": "Pink Station/Gourmet Guy/Coin Blocks"},
@@ -552,9 +555,10 @@
 					{"ref": "Red Station/Elevator Room/Upgrade Block"},
 					{"ref": "Red Station/Elevator Room/Multicoin Block"},
 					{"ref": "Red Station/Lantern Ghost/Watt"},
-					{"ref": "Blue Station/Anti Guy Room/Anti Guy Chest"},
-					{"ref": "Blue Station/Anti Guy Room/Left Block"},
-					{"ref": "Blue Station/Anti Guy Room/Hidden Block"}
+					{"ref": "Red Station/Block Barricade/Item Block"},
+					{"ref": "Red Station/Block Barricade/Hidden Coin Block"},
+					{"ref": "Red Station/Block Barricade/Item on Tall Block"},
+					{"ref": "Red Station/Block Barricade/General Guy/Muskular"}
 				],
 				"map_locations": [
 					{
@@ -640,7 +644,8 @@
 					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Upgrade Block"},
 					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Panel Star Piece"},
 					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Save Room/Panel Star Piece"},
-					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Save Room/Lava Piranha Room/Item Blocks"}
+					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Save Room/Lava Piranha Room/Item Blocks"},
+					{"ref": "Mt. Lavalava Entrance/Volcano Hub/Zipline/Save Room/Lava Piranha Room/Lava Piranha"}
 				],
 				"map_locations": [
 					{
@@ -677,7 +682,6 @@
 					{"ref": "Flower Fields Hub Room/Elevator Room (right side)/Upgrade Block"},
 					{"ref": "Flower Fields Hub Room/Elevator Room (right side)/Log Room/Hidden Block"},
 					{"ref": "Flower Fields Hub Room/Elevator Room (right side)/Log Room/Item on Ground"},
-					{"ref": "Flower Fields Hub Room/Cloudy Climb/Item in Cloud"},
 					{"ref": "Flower Fields Hub Room/Three Trees/Well/Throw Blue Berry"},
 					{"ref": "Flower Fields Hub Room/Blue Flower Room/Hidden Block Above Brick Block"},
 					{"ref": "Flower Fields Hub Room/Blue Flower Room/Hidden Block by Spring"},
@@ -687,7 +691,9 @@
 					{"ref": "Flower Fields Hub Room/Yellow Flower Room (Past Gate)/Bubble Berry Tree Room/Panel Star Piece"},
 					{"ref": "Flower Fields Hub Room/Red Flower Room/Middle Vine"},
 					{"ref": "Flower Fields Hub Room/Red Flower Room/Tree"},
-					{"ref": "Flower Fields Hub Room/Red Flower Room/Panel Star Piece"}
+					{"ref": "Flower Fields Hub Room/Red Flower Room/Panel Star Piece"},
+					{"ref": "Flower Fields Hub Room/Cloudy Climb/Item in Cloud"},
+					{"ref": "Flower Fields Hub Room/Cloudy Climb/Huff Room/Huff n Puff"}
 				],
 				"map_locations": [
 					{
@@ -742,13 +748,14 @@
 					{"ref": "Crystal Palace Entrance/Opposite Side of Mirror/P-Down D-Up Chest/Chest"},
 					{"ref": "Crystal Palace Entrance/Blue Key Blocks/Multicoin Blocks"},
 					{"ref": "Crystal Palace Entrance/Opposite Side of Mirror/Star Piece Cave/Item"},
+					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Chest"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Big Statue Room/Tall Block"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Big Statue Room/Panel Star Piece"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Small Statue Room/Tall Hidden Block"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Small Statue Room/Panel Star Piece"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Palace Key Chest/Chest"},
 					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/P-Up D-Down Chest/Chest"},
-					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Chest"}
+					{"ref": "Crystal Palace Entrance/Triple Dip Chest/Past Kooper Puzzle/Crystal King Fight/Crystal King"}
 				],
 				"map_locations": [
 					{
