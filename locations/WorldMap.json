@@ -248,7 +248,7 @@
 					{"ref": "East Switch Bridge/Hidden Block"},
 					{"ref": "East Switch Bridge/Star Piece Panel"},
 					{"ref": "Outside Fortress/Tree"},
-					{"ref": "Fortress Entrance/Outside Chest/Chest"}
+					{"ref": "Koopa Bros. Fortress Ledge/Chest"}
 				],
 				"map_locations": [
 					{
@@ -261,7 +261,6 @@
 			{
 				"name": "Koopa Bros. Fortress",
 				"sections": [
-					{"ref": "Koopa Bros. Fortress Ledge/Chest"},
 					{"ref": "Fortress Entrance/Front Tower/Item at the top"},
 					{"ref": "Fortress Entrance/Front Tower/Koopa Fight"},
 					{"ref": "Fortress Entrance/Jail Cells/Left Cell"},
