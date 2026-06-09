@@ -34,6 +34,14 @@
 				"chest_opened_img": "images/chests/generic_checked.png",
 				"sections": [
 					{
+						"name": "Slide Coins",
+						"access_rules": ["$canClimbShortLedges"],
+						"visibility_rules": ["coins_setting, $ch2Required"],
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
+						"item_count": 3
+					},
+					{
 						"name": "Block",
 						"access_rules": ["$canHitBlocks"],
 						"visibility_rules": ["$ch2Required"],
@@ -44,14 +52,6 @@
 						"access_rules": ["$canBreakYellowBlocks"],
 						"visibility_rules": ["$ch2Required"],
 						"item_count": 1
-					},
-					{
-						"name": "Slide Coins",
-						"access_rules": ["$canClimbShortLedges"],
-						"visibility_rules": ["coins_setting, $ch2Required"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
-						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -69,6 +69,14 @@
 				"access_rules": [],
 				"sections": [
 					{
+						"name": "Panel Star Piece",
+						"access_rules": ["boots2", "hammer3"],
+						"visibility_rules": ["panels_setting, $ch2Required"],
+						"chest_unopened_img": "images/chests/star_piece.png",
+						"chest_opened_img": "images/chests/star_piece_checked.png",
+						"item_count": 1
+					},
+					{
 						"name": "Right Item",
 						"access_rules": ["$kooper", "$parakarry"],
 						"visibility_rules": ["$ch2Required"],
@@ -80,14 +88,6 @@
 						"access_rules": ["$parakarry"],
 						"visibility_rules": ["$ch2Required"],
 						"capture_item": true,
-						"item_count": 1
-					},
-					{
-						"name": "Panel Star Piece",
-						"access_rules": ["boots2", "hammer3"],
-						"visibility_rules": ["panels_setting, $ch2Required"],
-						"chest_unopened_img": "images/chests/star_piece.png",
-						"chest_opened_img": "images/chests/star_piece_checked.png",
 						"item_count": 1
 					}
 				],
@@ -143,30 +143,20 @@
 						"item_count": 1
 					},
 					{
-						"name": "Left Block after Spring",
-						"access_rules": ["$canHitGroundedBlocks"],
-						"chest_unopened_img": "images/chests/coin.png",
-						"chest_opened_img": "images/chests/coin_checked.png",
-						"visibility_rules": ["coin_block_setting, $ch2Required"],
-						"item_count": 1
-					},
-					{
-						"name": "Right Block after Spring",
-						"access_rules": ["$canHitGroundedBlocks"],
-						"visibility_rules": ["$ch2Required"],
-						"item_count": 1
-					},
-					{
-						"name": "Slide Item",
-						"visibility_rules": ["$ch2Required"],
-						"item_count": 1
-					},
-					{
 						"name": "2 Lower Coins",
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
 						"visibility_rules": ["coins_setting, $ch2Required"],
 						"item_count": 2
+					},
+					{
+						"name": "Far Right Star Piece Coin",
+						"chest_unopened_img": "images/chests/coin.png",
+						"chest_opened_img": "images/chests/coin_checked.png",
+						"access_rules": ["$parakarry", "$kooper"],
+						"visibility_rules": ["coins_setting, $ch2Required"],
+						"capture_item": true,
+						"item_count": 1
 					},
 					{
 						"name": "Item in the Middle of Coins",
@@ -185,12 +175,22 @@
 						"item_count": 5
 					},
 					{
-						"name": "Far Right Star Piece Coin",
+						"name": "Left Block after Spring",
+						"access_rules": ["$canHitGroundedBlocks"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
-						"access_rules": ["$parakarry", "$kooper"],
-						"visibility_rules": ["coins_setting, $ch2Required"],
-						"capture_item": true,
+						"visibility_rules": ["coin_block_setting, $ch2Required"],
+						"item_count": 1
+					},
+					{
+						"name": "Right Block after Spring",
+						"access_rules": ["$canHitGroundedBlocks"],
+						"visibility_rules": ["$ch2Required"],
+						"item_count": 1
+					},
+					{
+						"name": "Slide Item",
+						"visibility_rules": ["$ch2Required"],
 						"item_count": 1
 					}
 				],

@@ -52,6 +52,8 @@ function onClear(slot_data)
                 elseif v[2] == "progressive" then
                     obj.CurrentStage = 0
                     obj.Active = false
+                elseif v[2] == "progressive_toggle" then
+                    obj.CurrentStage = 0
                 elseif v[2] == "consumable" then
                     obj.AcquiredCount = 0
                 -- elseif v[2] == "toggle_badged" then

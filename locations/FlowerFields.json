@@ -9,13 +9,13 @@
 				"name": "Three Trees",
 				"sections": [
 					{
-						"name": "Hit Trees (Middle, Right, Left)",
-						"access_rules": ["$canBreakYellowBlocks"],
+						"name": "Second Vine",
 						"visibility_rules": ["$ch6Required"],
 						"item_count": 1
 					},
 					{
-						"name": "Second Vine",
+						"name": "Hit Trees (Middle, Right, Left)",
+						"access_rules": ["$canBreakYellowBlocks"],
 						"visibility_rules": ["$ch6Required"],
 						"item_count": 1
 					}
@@ -32,11 +32,6 @@
 						"name": "Petunia Room",
 						"sections": [
 							{
-								"name": "Petunia",
-								"visibility_rules": ["$ch6Required"],
-								"item_count": 1
-							},
-							{
 								"name": "Tree",
 								"visibility_rules": ["$ch6Required"],
 								"item_count": 2
@@ -47,6 +42,11 @@
 								"visibility_rules": ["panels_setting, $ch6Required"],
 								"chest_unopened_img": "images/chests/star_piece.png",
 								"chest_opened_img": "images/chests/star_piece_checked.png",
+								"item_count": 1
+							},
+							{
+								"name": "Petunia",
+								"visibility_rules": ["$ch6Required"],
 								"item_count": 1
 							}
 						],
@@ -101,13 +101,13 @@
 				"access_rules": ["boots2, $lakilester"],
 				"sections": [
 					{
-						"name": "Ground Pound Arch",
-						"visibility_rules": ["$ch6Required"],
+						"name": "Upgrade Block",
+						"visibility_rules": ["upgrades_setting, $ch6Required"],
 						"item_count": 1
 					},
 					{
-						"name": "Upgrade Block",
-						"visibility_rules": ["upgrades_setting, $ch6Required"],
+						"name": "Ground Pound Arch",
+						"visibility_rules": ["$ch6Required"],
 						"item_count": 1
 					}
 				],
@@ -195,12 +195,6 @@
 						"name": "Bubble Berry Tree Room",
 						"sections": [
 							{
-								"name": "Bubble Berry Tree",
-								"access_rules": ["$sushie, water_stone_base, $canClimbShortLedges, $canBreakYellowBlocks"],
-								"visibility_rules": ["$ch6Required"],
-								"item_count": 2
-							},
-							{
 								"name": "Block on Left",
 								"access_rules": ["$canHitBlocks"],
 								"visibility_rules": ["$ch6Required"],
@@ -219,6 +213,12 @@
 								"chest_unopened_img": "images/chests/star_piece.png",
 								"chest_opened_img": "images/chests/star_piece_checked.png",
 								"item_count": 1
+							},
+							{
+								"name": "Bubble Berry Tree",
+								"access_rules": ["$sushie, water_stone_base, $canClimbShortLedges, $canBreakYellowBlocks"],
+								"visibility_rules": ["$ch6Required"],
+								"item_count": 2
 							}
 						],
 						"map_locations": [
