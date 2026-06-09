@@ -28,8 +28,8 @@
 		"map_locations": [
 			{
 				"map": "lavalava_island",
-				"x": 179,
-				"y": 1872
+				"x": 182,
+				"y": 666
 			}
 		],
 		"children": [
@@ -68,8 +68,8 @@
 				"map_locations": [
 					{
 						"map": "lavalava_island",
-						"x": 509,
-						"y": 1911
+						"x": 526,
+						"y": 693
 					}
 				]
 			},
@@ -102,7 +102,7 @@
 					{
 						"map": "lavalava_island",
 						"x": 856,
-						"y": 1916
+						"y": 707
 					}
 				]
 			},
@@ -146,7 +146,7 @@
 					{
 						"map": "lavalava_island",
 						"x": 1186,
-						"y": 1912
+						"y": 737
 					}
 				]
 			},
@@ -168,8 +168,8 @@
 				"map_locations": [
 					{
 						"map": "lavalava_island",
-						"x": 1474,
-						"y": 1919
+						"x": 1512,
+						"y": 732
 					}
 				]
 			},
@@ -208,7 +208,7 @@
 					{
 						"map": "lavalava_island",
 						"x": 1190,
-						"y": 1673
+						"y": 494
 					}
 				]
 			},
@@ -254,8 +254,8 @@
 				"map_locations": [
 					{
 						"map": "lavalava_island",
-						"x": 849,
-						"y": 1671
+						"x": 855,
+						"y": 494
 					}
 				]
 			},
@@ -324,7 +324,7 @@
 					{
 						"map": "lavalava_island",
 						"x": 509,
-						"y": 1671
+						"y": 494
 					}
 				]
 			},
@@ -365,7 +365,7 @@
 					{
 						"map": "lavalava_island",
 						"x": 509,
-						"y": 1480
+						"y": 280
 					}
 				],
 				"children": [
@@ -388,7 +388,7 @@
 							{
 								"map": "lavalava_island",
 								"x": 188,
-								"y": 1482
+								"y": 305
 							}
 						]
 					},
@@ -405,8 +405,8 @@
 						"map_locations": [
 							{
 								"map": "lavalava_island",
-								"x": 460,
-								"y": 1320
+								"x": 470,
+								"y": 152
 							}
 						]
 					},
@@ -433,7 +433,7 @@
 							{
 								"map": "lavalava_island",
 								"x": 849,
-								"y": 1480
+								"y": 280
 							}
 						],
 						"children": [
@@ -457,7 +457,7 @@
 									{
 										"map": "lavalava_island",
 										"x": 1163,
-										"y": 1480
+										"y": 280
 									}
 								]
 							},
@@ -489,8 +489,8 @@
 								"map_locations": [
 									{
 										"map": "lavalava_island",
-										"x": 885,
-										"y": 1269
+										"x": 1645,
+										"y": 480
 									}
 								],
 								"children": [
@@ -515,8 +515,8 @@
 										"map_locations": [
 											{
 												"map": "lavalava_island",
-												"x": 1147,
-												"y": 1137
+												"x": 1853,
+												"y": 339
 											}
 										]
 									},
@@ -538,8 +538,8 @@
 										"map_locations": [
 											{
 												"map": "lavalava_island",
-												"x": 1362,
-												"y": 1016
+												"x": 1986,
+												"y": 213
 											}
 										],
 										"children": [
@@ -566,8 +566,8 @@
 												"map_locations": [
 													{
 														"map": "lavalava_island",
-														"x": 1563,
-														"y": 898
+														"x": 2168,
+														"y": 88
 													}
 												]
 											},
@@ -583,8 +583,8 @@
 												"map_locations": [
 													{
 														"map": "lavalava_island",
-														"x": 1831,
-														"y": 381
+														"x": 2871,
+														"y": 399
 													}
 												]
 											}
