@@ -434,11 +434,46 @@
 				"chest_opened_img": "images/chests/generic_checked.png",
 				"sections": [
 					{
-						"name": "Merlow Rewards",
-						"access_rules": ["$canClimbShortLedges"],
+						"name": "Merlow Reward: 5 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:5"],
 						"visibility_rules": ["shopsanity_setting, merlow_setting"],
 						"clear_as_group": false,
-						"item_count": 6
+						"item_count": 1
+					},
+					{
+						"name": "Merlow Reward: 10 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:10"],
+						"visibility_rules": ["shopsanity_setting, merlow_setting"],
+						"clear_as_group": false,
+						"item_count": 1
+					},
+					{
+						"name": "Merlow Reward: 15 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:15"],
+						"visibility_rules": ["shopsanity_setting, merlow_setting"],
+						"clear_as_group": false,
+						"item_count": 1
+					},
+					{
+						"name": "Merlow Reward: 20 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:20"],
+						"visibility_rules": ["shopsanity_setting, merlow_setting"],
+						"clear_as_group": false,
+						"item_count": 1
+					},
+					{
+						"name": "Merlow Reward: 25 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:25"],
+						"visibility_rules": ["shopsanity_setting, merlow_setting"],
+						"clear_as_group": false,
+						"item_count": 1
+					},
+					{
+						"name": "Merlow Reward: 30 Star Pieces",
+						"access_rules": ["$canClimbShortLedges, starpiece:30"],
+						"visibility_rules": ["shopsanity_setting, merlow_setting"],
+						"clear_as_group": false,
+						"item_count": 1
 					},
 					{
 						"name": "Merlow Letter",
@@ -491,6 +526,14 @@
 						"visibility_rules": ["panels_setting"],
 						"chest_unopened_img": "images/chests/star_piece.png",
 						"chest_opened_img": "images/chests/star_piece_checked.png",
+						"item_count": 1
+					},
+					{
+						"name": "Open Star Way (Victory)",
+						"access_rules": ["^$StarHavenAccess"],
+						"visibility_rules": ["open_star_way"],
+						"chest_unopened_img": "images/chests/StarRod.png",
+						"chest_opened_img": "images/chests/StarRod_checked.png",
 						"item_count": 1
 					}
 				],

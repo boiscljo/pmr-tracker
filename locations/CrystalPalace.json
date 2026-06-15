@@ -3,7 +3,7 @@
 		"name": "Crystal Palace Entrance",
 		"chest_unopened_img": "images/chests/generic.png",
 		"chest_opened_img": "images/chests/generic_checked.png",
-		"access_rules": ["$CrystalPalaceAccess"],
+		"access_rules": ["^$CrystalPalaceAccess"],
 		"children": [
 			{
 				"name": "Blue Key Chest",
@@ -166,7 +166,7 @@
 									{
 										"name": "Tall Hidden Block",
 										"visibility_rules": ["$ch7Required"],
-										"access_rules": ["boots2, [boots3], $hiddenBlocks"],
+										"access_rules": ["boots2, [boots3], ^$hiddenBlocks"],
 										"item_count": 1
 									},
 									{

@@ -63,7 +63,7 @@
 						"sections": [
 							{
 								"name": "Hidden Block",
-								"access_rules": ["$canHitBlocks, $canClimbShortLedges, $hiddenBlocks"],
+								"access_rules": ["$canHitBlocks, $canClimbShortLedges, ^$hiddenBlocks"],
 								"visibility_rules": ["$ch5Required"],
 								"item_count": 1
 							}

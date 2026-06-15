@@ -140,5 +140,14 @@
         "type": "toggle",
         "img": "images/toadtown/The_Master_Second.png",
         "codes": "master3"
+    },
+    {
+        "name": "Star Piece",
+        "type": "consumable",
+        "img": "images/chests/star_piece.png",
+        "overlay_background": "#000000",
+        "max_quantity": 160,
+        "codes": "starpiece",
+        "loop": true
     }
 ]

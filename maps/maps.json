@@ -85,7 +85,7 @@
     },
     {
         "name": "lavalava_island",
-		"location_size": 50,
+		"location_size": 45,
 		"location_border_thickness": 5,
         "img": "images/maps/LavalavaIsland.png"
     },
@@ -112,5 +112,35 @@
 		"location_size": 50,
 		"location_border_thickness": 5,
         "img": "images/maps/CrystalPalace.png"
+    },
+    {
+        "name": "star_haven",
+		"location_size": 18,
+		"location_border_thickness": 2,
+        "img": "images/maps/StarHaven.png"
+    },
+    {
+        "name": "bowser_castle_1",
+		"location_size": 25,
+		"location_border_thickness": 3,
+        "img": "images/maps/BowsersCastleDoor1.png"
+    },
+    {
+        "name": "bowser_castle_2",
+		"location_size": 22,
+		"location_border_thickness": 2,
+        "img": "images/maps/BowsersCastleDoor2.png"
+    },
+    {
+        "name": "bowser_castle_3",
+		"location_size": 25,
+		"location_border_thickness": 3,
+        "img": "images/maps/BowsersCastleDoor3.png"
+    },
+    {
+        "name": "peach_castle",
+		"location_size": 35,
+		"location_border_thickness": 4,
+        "img": "images/maps/PeachsCastle.png"
     }
 ]

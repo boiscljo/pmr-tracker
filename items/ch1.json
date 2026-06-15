@@ -3,6 +3,7 @@
         "name": "Koopa Bros Fortress Key",
         "type": "consumable",
         "img": "images/ch1/FortressKey_PM.png",
+        "overlay_background": "#000000",
         "max_quantity": 4,
         "codes": "ch1_key",
         "loop": true

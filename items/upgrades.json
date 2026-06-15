@@ -5,7 +5,7 @@
         "allow_disabled": false,
         "stages": [
             {
-                "img": "images/upgrades/PM_No_Boots.png",
+                "img": "images/upgrades/PM_Boots.png",
                 "inherit_codes": false,
                 "img_mods": "@disabled",
                 "codes": "boots_base"
@@ -30,7 +30,7 @@
         "allow_disabled": false,
         "stages": [
             {
-                "img": "images/upgrades/PM_No_Hammer.png",
+                "img": "images/upgrades/PM_Hammer.png",
                 "inherit_codes": false,
                 "img_mods": "@disabled",
                 "codes": "hammer_base"

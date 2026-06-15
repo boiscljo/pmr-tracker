@@ -140,13 +140,19 @@
 			{
 				"name": "Shooting Star Summit",
 				"sections": [
-					{"ref": "Main Gate/Merluvlee's House/Merlow Rewards"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 5 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 10 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 15 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 20 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 25 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 30 Star Pieces"},
 					{"ref": "Main Gate/Merluvlee's House/Star Piece Panel"},
 					{"ref": "Main Gate/Merluvlee's House/Merluvlee"},
 					{"ref": "Main Gate/Merluvlee's House/Merlow Letter"},
 					{"ref": "Main Gate/Star Region/Star Piece Panel"},
 					{"ref": "Main Gate/Shooting Star Summit/Star Piece"},
-					{"ref": "Main Gate/Shooting Star Summit/Star Piece Panel"}
+					{"ref": "Main Gate/Shooting Star Summit/Star Piece Panel"},
+					{"ref": "Main Gate/Shooting Star Summit/Open Star Way (Victory)"}
 				],
 				"map_locations": [
 					{
@@ -261,13 +267,14 @@
 			{
 				"name": "Koopa Bros. Fortress",
 				"sections": [
-					{"ref": "Fortress Entrance/Front Tower/Item at the top"},
 					{"ref": "Fortress Entrance/Front Tower/Koopa Fight"},
-					{"ref": "Fortress Entrance/Jail Cells/Left Cell"},
-					{"ref": "Fortress Entrance/Jail Cells/Right Cell"},
 					{"ref": "Fortress Entrance/Jail Cells/Middle Cell"},
+					{"ref": "Fortress Entrance/Jail Cells/Right Cell"},
 					{"ref": "Fortress Entrance/Bomb Jail/Bombette"},
 					{"ref": "Fortress Entrance/Pit/Pedestal Item"},
+					{"ref": "Fortress Entrance/Outside Chest/Chest"},
+					{"ref": "Fortress Entrance/Jail Cells/Left Cell"},
+					{"ref": "Fortress Entrance/Front Tower/Item at the top"},
 					{"ref": "Fortress Entrance/Cannon Bridge/Block"},
 					{"ref": "Fortress Entrance/Koopa Bros./Koopa Bros."}
 				],
@@ -492,7 +499,8 @@
 					{"ref": "Tubba's Castle Entrance/Upstairs/Mega Rush Room/Item Behind Wall"},
 					{"ref": "Tubba's Castle Entrance/Upstairs/Mega Rush Room/Coins on Bed"},
 					{"ref": "Tubba's Castle Entrance/Upstairs/Tubba West Upper Stairwell/Block"},
-					{"ref": "Tubba's Castle Entrance/Upstairs/Tubba West Upper Stairwell/Clubba Room/Item on Pedestal"}
+					{"ref": "Tubba's Castle Entrance/Upstairs/Tubba West Upper Stairwell/Clubba Room/Item on Pedestal"},
+					{"ref": "Tubba's Castle Entrance/Upstairs/Tubba West Upper Stairwell/Tubba's Bedroom/Chest"}
 				],
 				"map_locations": [
 					{
@@ -569,7 +577,7 @@
 				]
 			},
 			{
-				"name": "Lavalava Island",
+				"name": "Jade Jungle",
 				"sections": [
 					{"ref": "Whale/Coins Above Spinny Flower"},
 					{"ref": "Whale/Behind Bush"},
@@ -762,6 +770,71 @@
 						"map": "world_map",
 						"x": 236,
 						"y": 95
+					}
+				]
+			},
+			{
+				"name": "Star Haven",
+				"sections": [
+					{"ref": "Star Haven/Shop"},
+					{"ref": "Star Haven/Star Sanctuary/Gift of the Stars"}
+				],
+				"map_locations": [
+					{
+						"map": "world_map",
+						"x": 171,
+						"y": 62
+					}
+				]
+			},
+			{
+				"name": "Bowser's Castle",
+				"sections": [
+					{"ref": "Bowser's Castle/Outside Lower Jail/Defeat Koopatrol"},
+					{"ref": "Bowser's Castle/Lower Jail/Crates"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Yellow Block"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Front Door Exterior/Red Block"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Lava Channel 3/On Island 1"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Lava Channel 3/On Island 2"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Lava Key Room/In Chest"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Lava Key Room/Dark Cave 1/Yellow Block"},
+					{"ref": "Bowser's Castle/Lower Jail/Outside Lower Jail East/Lava Key Room/Dark Cave 2/Yellow Block"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/East Upper Jail/Defeat Koopatrol"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Item Shop/Shop"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Left Water Puzzle/Top Left Ledge"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Hidden Block"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Hidden Door Room/Hidden Block"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Hidden Door Room/Yellow Block"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Hidden Key Room/Ground Key"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Battlements/Yellow Blocks"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Battlements/On Ledge"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Battlements/West Upper Jail/Defeat Koopatrol"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Battlements/Ultra Shroom Room/Ground Item"},
+					{"ref": "Bowser's Castle/Lower Grand Hall/Right Water Puzzle/Battlements/Castle Key Room/Ground Key"}
+				],
+				"map_locations": [
+					{
+						"map": "world_map",
+						"x": 98,
+						"y": 43
+					}
+				]
+			},
+			{
+				"name": "Peach's Castle",
+				"sections": [
+					{"ref": "Peach's Castle/Hijacked Castle Entrance/Hidden Block"},
+					{"ref": "Peach's Castle/Library/Upper Level"},
+					{"ref": "Peach's Castle/Library/Between Bookshelves"},
+					{"ref": "Peach's Castle/Storeroom/On The Ground"},
+					{"ref": "Peach's Castle/Guest Room/In Chest"},
+					{"ref": "Peach's Castle/Atop the Castle/Bowser (Victory)"}
+				],
+				"map_locations": [
+					{
+						"map": "world_map",
+						"x": 98,
+						"y": 21
 					}
 				]
 			}

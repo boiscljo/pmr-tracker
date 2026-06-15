@@ -82,33 +82,14 @@
     },
     {
         "name": "Starting Magical Seeds",
-        "type": "progressive",
-        "allow_disabled": false,
-        "initial_stage_idx": 0,
-        "loop": true,
-        "stages": [
-            {
-                "img": "images/settings/AllSeeds.png",
-                "img_mods": "@disabled",
-                "codes": "ch6_seeds_0"
-            },
-            {
-                "img": "images/settings/1Seed.png",
-                "codes": "ch6_seeds_1"
-            },
-            {
-                "img": "images/settings/2Seed.png",
-                "codes": "ch6_seeds_2"
-            },
-            {
-                "img": "images/settings/3Seed.png",
-                "codes": "ch6_seeds_3"
-            },
-            {
-                "img": "images/settings/AllSeeds.png",
-                "codes": "ch6_seeds_4"
-            }
-        ]
+        "type": "consumable",
+        "img": "images/ch6/seeds_all.png",
+        "initial_quantity": 4,
+        "overlay_font_size": 13,
+        "overlay_background": "#000000",
+        "max_quantity": 4,
+        "codes": "required_seeds",
+        "loop": true
     },
     {
         "name": "Open Ch7 Bridge",

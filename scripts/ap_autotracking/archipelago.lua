@@ -211,8 +211,8 @@ function onClear(slot_data)
 
     if slot_data['hidden_block_mode'] then
         local obj = Tracker:FindObjectForCode('hidden_blocks_visible')
-        if obj then
-            obj.Active = slot_data['hidden_block_mode']
+        if obj and slot_data['hidden_block_mode'] == 3 then
+            obj.Active = true
         end
     end
 
@@ -252,9 +252,77 @@ function onClear(slot_data)
     end
 
     if slot_data['magical_seeds'] then
-        local obj = Tracker:FindObjectForCode('seeds')
+        local obj = Tracker:FindObjectForCode('required_seeds')
         if obj then
-            obj.CurrentStage = 4 - slot_data['magical_seeds']
+            obj.AcquiredCount = slot_data['magical_seeds']
+        end
+    end
+
+    -- seed_goal -> if open star way, hide all checks in sh/bc/pc
+    if slot_data['seed_goal'] then
+        local obj = Tracker:FindObjectForCode('seed_goal')
+        if obj then
+            obj.CurrentStage = slot_data['seed_goal']
+        end
+    end
+    -- bowser_castle_mode -> if seed_goal bowser
+    --      -> if vanilla, all checks visible
+    --      -> if shortened, hides all but koopatrol, shop, battlements, upper jails, ultra shroom, hidden door blocks
+    --      -> if boss rush, all BC hidden, PC(G) visible
+    if slot_data['bowser_castle_mode'] then
+        local obj = Tracker:FindObjectForCode('bowser_castle_mode')
+        if obj then
+            obj.CurrentStage = slot_data['bowser_castle_mode']
+        end
+    end
+
+    -- spirit_requirements
+    --      -> if any just care about number
+    --      -> if specific just care about which
+    --      -> if specific & limit set chapters required by which -v
+    if slot_data['spirit_requirements'] then
+        local obj = Tracker:FindObjectForCode('spirit_requirements')
+        if obj then
+            obj.CurrentStage = slot_data['spirit_requirements']
+        end
+    end
+
+    -- required_spirits (which ones) -> used to indicate which required for SH access & ^ limit
+
+    if slot_data['star_way_spirits'] then
+        local obj = Tracker:FindObjectForCode('sw_spirits')
+        if obj then
+            obj.AcquiredCount = slot_data['star_way_spirits']
+        end
+    end
+    if slot_data['star_beam_spirits'] then
+        local obj = Tracker:FindObjectForCode('sb_spirits')
+        if obj then
+            obj.AcquiredCount = slot_data['star_beam_spirits']
+        end
+    end
+    if slot_data['power_star_hunt'] then
+        local obj = Tracker:FindObjectForCode('power_star_hunt')
+        if obj then
+            obj.Active = slot_data['power_star_hunt']
+        end
+    end
+    if slot_data['star_way_power_stars'] then
+        local obj = Tracker:FindObjectForCode('sw_powerstars')
+        if obj then
+            obj.AcquiredCount = slot_data['star_way_power_stars']
+        end
+    end
+    if slot_data['star_beam_power_stars'] then
+        local obj = Tracker:FindObjectForCode('sb_powerstars')
+        if obj then
+            obj.AcquiredCount = slot_data['star_beam_power_stars']
+        end
+    end
+    if slot_data['shuffle_star_beam'] then
+        local obj = Tracker:FindObjectForCode('starbeam_shuffle')
+        if obj then
+            obj.Active = slot_data['shuffle_star_beam']
         end
     end
 end

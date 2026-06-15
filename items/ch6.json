@@ -32,6 +32,7 @@
         "type": "consumable",
         "base_item": "blue_berry_base",
         "img": "images/ch6/PaperMario_Items_BlueBerry.png",
+        "overlay_background": "#000000",
         "max_quantity": 2,
         "codes": "blue_berry"
     },

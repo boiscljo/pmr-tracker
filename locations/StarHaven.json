@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Star Haven",
+		"chest_unopened_img": "images/chests/generic.png",
+		"chest_opened_img": "images/chests/generic_checked.png",
+		"visibility_rules": ["defeat_bowser"],
+		"access_rules": ["^$StarHavenAccess"],
+		"sections": [
+			{
+				"name": "Shop",
+				"visibility_rules": ["shopsanity_setting"],
+				"access_rules": ["boots"],
+				"clear_as_group": true,
+				"item_count": 6
+			}
+		],
+		"map_locations": [
+			{
+				"map": "star_haven",
+				"x": 550,
+				"y": 65
+			}
+		],
+		"children": [
+			{
+				"name": "Star Sanctuary",
+				"chest_unopened_img": "images/chests/generic.png",
+				"chest_opened_img": "images/chests/generic_checked.png",
+				"visibility_rules": ["defeat_bowser, starbeam_shuffle"],
+				"access_rules": ["$BeamAccess"],
+				"sections": [
+					{
+						"name": "Gift of the Stars",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "star_haven",
+						"x": 856,
+						"y": 99
+					}
+				]
+			}
+		]
+	}
+]
