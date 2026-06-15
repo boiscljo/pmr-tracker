@@ -285,9 +285,25 @@ function onClear(slot_data)
         if obj then
             obj.CurrentStage = slot_data['spirit_requirements']
         end
+
+        if obj.CurrentStage > 0 then
+            -- required_spirits (which ones) -> used to indicate which required for SH access & ^ limit
+            if slot_data['required_spirits'] then
+                local spirits = slot_data['required_spirits']
+                if #spirits ~= 0 then
+                    for i = 1, 7 do
+                        obj = Tracker:FindObjectForCode('ch'..i..'_lcl')
+                        obj.Active = false
+                    end
+                end
+                for i = 1, #spirits do
+                    obj = Tracker:FindObjectForCode('ch'..spirits[i]..'_lcl')
+                        obj.Active = true
+                end
+            end
+        end
     end
 
-    -- required_spirits (which ones) -> used to indicate which required for SH access & ^ limit
 
     if slot_data['star_way_spirits'] then
         local obj = Tracker:FindObjectForCode('sw_spirits')
