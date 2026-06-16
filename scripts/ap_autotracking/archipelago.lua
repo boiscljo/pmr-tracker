@@ -92,8 +92,11 @@ function onClear(slot_data)
 
     if slot_data['merlow_items'] then
         local obj = Tracker:FindObjectForCode('merlow_setting')
-        if obj then
-            obj.Active = slot_data['merlow_items']
+        if obj and slot_data['merlow_items'] > 0 then
+            obj.CurrentStage = 1
+            if slot_data['merlow_rewards_pricing'] then
+                obj.CurrentStage = 1 + slot_data['merlow_rewards_pricing']
+            end
         end
     end
 
