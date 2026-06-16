@@ -303,7 +303,8 @@
             "trading_setting",
             "upgrades_setting",
             "multicoin_setting",
-            "dungeon_setting"
+            "dungeon_setting",
+            "puzzles_setting"
           ]
         ]
       }
