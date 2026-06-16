@@ -47,15 +47,6 @@
         ]
     },
     {
-        "name": "Merlow",
-        "type": "toggle",
-        "img": "images/settings/Merlow.png",
-        "disabled_img_mods": "overlay|images/settings/no120.png",
-        "initial_active_state": true,
-        "loop": true,
-        "codes": "merlow_price"
-    },
-    {
         "name": "Keysanity",
         "type": "toggle",
         "img": "images/settings/OddKey.png",
