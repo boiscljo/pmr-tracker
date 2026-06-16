@@ -140,12 +140,12 @@
 			{
 				"name": "Shooting Star Summit",
 				"sections": [
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 5 Star Pieces"},
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 10 Star Pieces"},
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 15 Star Pieces"},
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 20 Star Pieces"},
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 25 Star Pieces"},
-					{"ref": "Main Gate/Merluvlee's House/Merlow Reward: 30 Star Pieces"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 1"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 2"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 3"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 4"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 5"},
+					{"ref": "Main Gate/Merluvlee's House/Merlow Reward 6"},
 					{"ref": "Main Gate/Merluvlee's House/Star Piece Panel"},
 					{"ref": "Main Gate/Merluvlee's House/Merluvlee"},
 					{"ref": "Main Gate/Merluvlee's House/Merlow Letter"},
