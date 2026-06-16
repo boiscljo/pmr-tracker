@@ -129,7 +129,7 @@
 							},
 							{
 								"name": "Hidden Block",
-								"access_rules": ["$hiddenBlocks"],
+								"access_rules": ["^$hiddenBlocks"],
 								"visibility_rules": ["$ch6Required"],
 								"item_count": 1
 							}
@@ -202,7 +202,7 @@
 							},
 							{
 								"name": "Hidden Block on Right",
-								"access_rules": ["$canHitBlocks, $canClimbShortLedges, $hiddenBlocks"],
+								"access_rules": ["$canHitBlocks, $canClimbShortLedges, ^$hiddenBlocks"],
 								"visibility_rules": ["$ch6Required"],
 								"item_count": 1
 							},
@@ -313,7 +313,7 @@
 				"sections": [
 					{
 						"name": "Hidden Block by Spring",
-						"access_rules": ["$canHitBlocks, $hiddenBlocks"],
+						"access_rules": ["$canHitBlocks, ^$hiddenBlocks"],
 						"visibility_rules": ["coin_block_setting, $ch6Required"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",
@@ -321,7 +321,7 @@
 					},
 					{
 						"name": "Hidden Block Above Brick Block",
-						"access_rules": ["boots, $hiddenBlocks"],
+						"access_rules": ["boots, ^$hiddenBlocks"],
 						"visibility_rules": ["$ch6Required"],
 						"item_count": 1
 					}

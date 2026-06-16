@@ -3,6 +3,7 @@
         "name": "Ruins Key",
         "type": "consumable",
         "img": "images/ch2/Ruins_Key.png",
+        "overlay_background": "#000000",
         "max_quantity": 4,
         "codes": "ch2_key"
     },
@@ -95,6 +96,7 @@
         "name": "Letters",
         "type": "consumable",
         "img": "images/ch2/PM_Letter_Sprite.png",
+        "overlay_background": "#000000",
         "max_quantity": 3,
         "codes": "letters"
     }

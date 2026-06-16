@@ -1,0 +1,348 @@
+[
+	{
+		"name": "Bowser's Castle",
+		"chest_unopened_img": "images/chests/generic.png",
+		"chest_opened_img": "images/chests/generic_checked.png",
+		"visibility_rules": ["defeat_bowser, bc_vanilla", "defeat_bowser, bc_shortened"],
+		"access_rules": ["$StarHavenAccess"],
+		"children": [
+			{
+				"name": "Outside Lower Jail",
+				"sections": [
+					{
+						"name": "Defeat Koopatrol",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "bowser_castle_1",
+						"x": 557,
+						"y": 291
+					}
+				]
+			},
+			{
+				"name": "Lower Jail",
+				"visibility_rules": ["bc_vanilla"],
+				"access_rules": ["ch8_key:1, [^$BowsersCastle2Access]"],
+				"sections": [
+					{
+						"name": "Crates",
+						"access_rules": ["boots2"],
+						"item_count": 2
+					}
+				],
+				"map_locations": [
+					{
+						"map": "bowser_castle_1",
+						"x": 708,
+						"y": 222
+					}
+				],
+				"children": [
+					{
+						"name": "Outside Lower Jail East",
+						"access_rules": ["$bombette, $lakilester"],
+						"sections": [
+							{
+								"name": "Yellow Block",
+								"access_rules": ["$canHitBlocks"],
+								"item_count": 1
+							}
+						],
+						"map_locations": [
+							{
+								"map": "bowser_castle_1",
+								"x": 696,
+								"y": 292
+							}
+						],
+						"children": [
+							{
+								"name": "Front Door Exterior",
+								"access_rules": ["$bombette, $lakilester"],
+								"sections": [
+									{
+										"name": "Red Block",
+										"access_rules": ["$canHitBlocks"],
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_1",
+										"x": 179,
+										"y": 213
+									}
+								]
+							},
+							{
+								"name": "Lava Channel 3",
+								"sections": [
+									{
+										"name": "On Island 1",
+										"access_rules": ["$parakarry", "$kooper"],
+										"item_count": 1
+									},
+									{
+										"name": "On Island 2",
+										"access_rules": ["$parakarry, $bow"],
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_1",
+										"x": 1252,
+										"y": 299
+									}
+								]
+							},
+							{
+								"name": "Lava Key Room",
+								"access_rules": ["$parakarry, $bow"],
+								"sections": [
+									{
+										"name": "In Chest",
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_1",
+										"x": 1109,
+										"y": 246
+									}
+								],
+								"children": [
+									{
+										"name": "Dark Cave 1",
+										"access_rules": ["[ch8_key:2], [$watt]"],
+										"sections": [
+											{
+												"name": "Yellow Block",
+												"item_count": 1
+											}
+										],
+										"map_locations": [
+											{
+												"map": "bowser_castle_1",
+												"x": 1351,
+												"y": 91
+											}
+										]
+									},
+									{
+										"name": "Dark Cave 2",
+										"access_rules": ["[ch8_key:2], [$watt]"],
+										"sections": [
+											{
+												"name": "Yellow Block",
+												"item_count": 1
+											}
+										],
+										"map_locations": [
+											{
+												"map": "bowser_castle_1",
+												"x": 1097,
+												"y": 60
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Lower Grand Hall",
+				"access_rules": ["^$BowsersCastle2Access"],
+				"children": [
+					{
+						"name": "East Upper Jail",
+						"sections": [
+							{
+								"name": "Defeat Koopatrol",
+								"item_count": 1
+							}
+						],
+						"map_locations": [
+							{
+								"map": "bowser_castle_2",
+								"x": 552,
+								"y": 268
+							}
+						]
+					},
+					{
+						"name": "Item Shop",
+						"sections": [
+							{
+								"name": "Shop",
+								"item_count": 6
+							}
+						],
+						"map_locations": [
+							{
+								"map": "bowser_castle_2",
+								"x": 40,
+								"y": 173
+							}
+						]
+					},
+					{
+						"name": "Left Water Puzzle",
+						"access_rules": ["$sushie, boots3"],
+						"sections": [
+							{
+								"name": "Top Left Ledge",
+								"item_count": 1
+							}
+						],
+						"map_locations": [
+							{
+								"map": "bowser_castle_2",
+								"x": 529,
+								"y": 157
+							}
+						]
+					},
+					{
+						"name": "Right Water Puzzle",
+						"access_rules": ["$sushie, boots3"],
+						"sections": [
+							{
+								"name": "Hidden Block",
+								"access_rules": ["^$hiddenBlocks"],
+								"item_count": 1
+							}
+						],
+						"map_locations": [
+							{
+								"map": "bowser_castle_2",
+								"x": 742,
+								"y": 148
+							}
+						],
+						"children": [
+							{
+								"name": "Hidden Door Room",
+								"access_rules": ["[ch8_key:3], ch8_key:2", "ch8_key:2, bc_shortened"],
+								"sections": [
+									{
+										"name": "Hidden Block",
+										"access_rules": ["^$hiddenBlocks"],
+										"item_count": 1
+									},
+									{
+										"name": "Yellow Block",
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_2",
+										"x": 1080,
+										"y": 117
+									}
+								]
+							},
+							{
+								"name": "Hidden Key Room",
+								"access_rules": ["[ch8_key:3], ch8_key:2", "ch8_key:2, bc_shortened"],
+								"sections": [
+									{
+										"name": "Ground Key",
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_2",
+										"x": 1195,
+										"y": 26
+									}
+								]
+							},
+							{ // Part 3
+								"name": "Battlements",
+								"access_rules": ["^$BowsersCastle3Access"],
+								"sections": [
+									{
+										"name": "Yellow Blocks",
+										"item_count": 3
+									},
+									{
+										"name": "On Ledge",
+										"item_count": 1
+									}
+								],
+								"map_locations": [
+									{
+										"map": "bowser_castle_3",
+										"x": 611,
+										"y": 185
+									}
+								],
+								"children": [
+									{
+										"name": "West Upper Jail",
+										"sections": [
+											{
+												"name": "Defeat Koopatrol",
+												"item_count": 1
+											}
+										],
+										"map_locations": [
+											{
+												"map": "bowser_castle_3",
+												"x": 53,
+												"y": 199
+											}
+										]
+									},
+									{
+										"name": "Ultra Shroom Room",
+										"access_rules": ["$bombette"],
+										"sections": [
+											{
+												"name": "Ground Item",
+												"item_count": 1
+											}
+										],
+										"map_locations": [
+											{
+												"map": "bowser_castle_3",
+												"x": 84,
+												"y": 95
+											}
+										]
+									},
+									{
+										"name": "Castle Key Room",
+										"access_rules": ["$bombette", "$kooper"],
+										"sections": [
+											{
+												"name": "Ground Key",
+												"item_count": 1
+											}
+										],
+										"map_locations": [
+											{
+												"map": "bowser_castle_3",
+												"x": 810,
+												"y": 41
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

@@ -133,5 +133,166 @@
         "initial_active_state": false,
         "loop": true,
         "codes": "dungeon_setting"
+    },
+
+    {
+        "name": "Starting Map",
+        "type": "progressive",
+        "allow_disabled": false,
+        "codes": "starting_map",
+        "stages": [
+            {
+                "name": "Start: Toad Town", 
+                "img": "images/settings/Toad.png",
+                "codes": "start_toadtown",
+                "inherit_codes": false
+            },
+            {
+                "name": "Start: Goomba Region", 
+                "img": "images/settings/Goomba.png",
+                "codes": "start_goomba",
+                "inherit_codes": false
+            },
+            {
+                "name": "Start: Dry Dry Outpost", 
+                "img": "images/settings/Nomad.png",
+                "codes": "start_desert",
+                "inherit_codes": false
+            },
+            {
+                "name": "Start: Yoshi Village", 
+                "img": "images/settings/Yoshi.png",
+                "codes": "start_yoshi",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Seed Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "codes": "seed_goal",
+        "stages": [
+            {
+                "name": "Defeat Bowser", 
+                "img": "images/settings/Bowser.png",
+                "codes": "defeat_bowser",
+                "inherit_codes": false
+            },
+            {
+                "name": "Open Star Way", 
+                "img": "images/settings/Twink.png",
+                "codes": "open_star_way",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bowser Castle Mode",
+        "type": "progressive",
+        "allow_disabled": false,
+        "codes": "bowser_castle_mode",
+        "stages": [
+            {
+                "name": "Vanilla Castle", 
+                "img": "images/settings/FullBC.png",
+                "codes": "bc_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shortened Castle", 
+                "img": "images/settings/FastBC.png",
+                "codes": "bc_shortened",
+                "inherit_codes": false
+            },
+            {
+                "name": "Bosh Rush", 
+                "img": "images/settings/Duplighost.png",
+                "codes": "bc_bossrush",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Spirit Requirements",
+        "type": "progressive",
+        "allow_disabled": false,
+        "codes": "spirit_requirements",
+        "stages": [
+            {
+                "name": "Any Spirits", 
+                "img": "images/star_spirits/StarBeam.png",
+                "codes": "sr_any",
+                "inherit_codes": false
+            },
+            {
+                "name": "Specific Spirits", 
+                "img": "images/star_spirits/Eldstar_PM.png",
+                "codes": "sr_specific",
+                "inherit_codes": false
+            },
+            {
+                "name": "Specific Spirits + LCL", 
+                "img": "images/star_spirits/Eldstar_PM.png",
+                "img_mods": "overlay|images/star_spirits/LCL.png",
+                "codes": "sr_lcl",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Power Star Hunt",
+        "type": "toggle",
+        "img": "images/star_spirits/Power_Star.png",
+        "loop": true,
+        "codes": "power_star_hunt"
+    },
+    {
+        "name": "Star Beam Shuffle",
+        "type": "toggle",
+        "img": "images/star_spirits/StarBeam.png",
+        "loop": true,
+        "codes": "starbeam_shuffle"
+    },
+    {
+        "name": "Star Way Power Stars",
+        "type": "consumable",
+        "img": "images/star_spirits/Power_Star.png",
+        "overlay_font_size": 13,
+        "overlay_background": "#000000",
+        "max_quantity": 120,
+        "codes": "sw_powerstars",
+        "loop": true
+    },
+    {
+        "name": "Star Way Spirits",
+        "type": "consumable",
+        "img": "images/star_spirits/StarBeam.png",
+        "overlay_font_size": 13,
+        "overlay_background": "#000000",
+        "max_quantity": 7,
+        "codes": "sw_spirits",
+        "loop": true
+    },
+    {
+        "name": "Star Beam Spirits",
+        "type": "consumable",
+        "img": "images/star_spirits/StarBeam.png",
+        "overlay_font_size": 13,
+        "overlay_background": "#000000",
+        "max_quantity": 7,
+        "codes": "sb_spirits",
+        "loop": true
+    },
+    {
+        "name": "Star Beam Power Stars",
+        "type": "consumable",
+        "img": "images/star_spirits/Power_Star.png",
+        "overlay_font_size": 13,
+        "overlay_background": "#000000",
+        "max_quantity": 120,
+        "codes": "sb_powerstars",
+        "loop": true
     }
 ]

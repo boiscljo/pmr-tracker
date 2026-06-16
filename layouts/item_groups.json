@@ -110,7 +110,7 @@
             "blue_key",
             "lyrics",
             "melody",
-            ""
+            "starpiece"
           ]
         ]
       }
@@ -330,7 +330,9 @@
           ],
           [
             "open_whale",
-            "open_ch7_bridge"
+            "required_seeds",
+            "open_ch7_bridge",
+            "starting_map"
           ]
         ]
       }

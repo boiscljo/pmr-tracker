@@ -174,7 +174,7 @@
               }
             },
             {
-              "title": "Lavalava Island",
+              "title": "Jade Jungle",
               "content": {
                 "type": "map",
                 "v_alignment": "center",
@@ -223,33 +223,68 @@
                 ]
               }
             },
-            // {
-            // 	"title": "Star Way",
-            // 	"content": {
-            // 		"type": "map",
-            // 		"maps": [
-            // 			"star_way"
-            // 		]
-            // 	}
-            // },
-            // {
-            // 	"title": "Bowser's Castle (Full)",
-            // 	"content": {
-            // 		"type": "map",
-            // 		"maps": [
-            // 			"bowser_castle_full"
-            // 		]
-            // 	}
-            // },
-            // {
-            // 	"title": "Peach's Castle",
-            // 	"content": {
-            // 		"type": "map",
-            // 		"maps": [
-            // 			"peach_castle"
-            // 		]
-            // 	}
-            // }
+            {
+              "title": "Star Haven",
+              "content": {
+                "type": "map",
+                "v_alignment": "center",
+                "maps": [
+                  "star_haven"
+                ]
+              }
+            },
+            {
+              "title": "Bowser's Castle",
+              "background": "#706060",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Before Quiz Door 1",
+                    "background": "#877373",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "maps": [
+                        "bowser_castle_1"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Before Quiz Door 2",
+                    "background": "#877373",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "maps": [
+                        "bowser_castle_2"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Before Quiz Door 3",
+                    "background": "#877373",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "maps": [
+                        "bowser_castle_3"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Peach's Castle",
+              "content": {
+                "type": "map",
+                "v_alignment": "center",
+                "maps": [
+                  "peach_castle"
+                ]
+              }
+            }
           ]
         }
       ]

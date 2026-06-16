@@ -231,6 +231,7 @@
 		"name": "Toad Town Gate",
 		"chest_unopened_img": "images/chests/generic.png",
 		"chest_opened_img": "images/chests/generic_checked.png",
+		"access_rules": ["$ToadTownAccess"],
 		"sections":[
 			{
 				"name": "Block",
@@ -314,7 +315,7 @@
 			},
 			{
 				"name": "Hidden Block Above Stone Block",
-				"access_rules": ["hammer2, $hiddenBlocks"],
+				"access_rules": ["hammer2, ^$hiddenBlocks"],
 				"visibility_rules": [],
 				"item_count": 1
 			},

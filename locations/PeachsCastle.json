@@ -1,0 +1,100 @@
+[
+	{
+		"name": "Peach's Castle",
+		"chest_unopened_img": "images/chests/generic.png",
+		"chest_opened_img": "images/chests/generic_checked.png",
+		"visibility_rules": ["defeat_bowser"],
+		"access_rules": ["^$PeachsCastleAccess"],
+		"children": [
+			{
+				"name": "Hijacked Castle Entrance",
+				"sections": [
+					{
+						"name": "Hidden Block",
+						"access_rules": ["^$hiddenBlocks"],
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "peach_castle",
+						"x": 857,
+						"y": 730
+					}
+				]
+			},
+			{
+				"name": "Library",
+				"sections": [
+					{
+						"name": "Upper Level",
+						"access_rules": ["$canClimbShortLedges"],
+						"item_count": 1
+					},
+					{
+						"name": "Between Bookshelves",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "peach_castle",
+						"x": 102,
+						"y": 279
+					}
+				]
+			},
+			{
+				"name": "Storeroom",
+				"sections": [
+					{
+						"name": "On The Ground",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "peach_castle",
+						"x": 1354,
+						"y": 228
+					}
+				]
+			},
+			{
+				"name": "Guest Room",
+				"sections": [
+					{
+						"name": "In Chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "peach_castle",
+						"x": 1379,
+						"y": 474
+					}
+				]
+			},
+			{
+				"name": "Atop the Castle",
+				"access_rules": ["starbeam"],
+				"chest_unopened_img": "images/chests/StarRod.png",
+				"chest_opened_img": "images/chests/StarRod_checked.png",
+				"sections": [
+					{
+						"name": "Bowser (Victory)",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "peach_castle",
+						"x": 1001,
+						"y": 70
+					}
+				]
+			}
+		]
+	}
+]

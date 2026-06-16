@@ -7,7 +7,7 @@
 		"sections": [
 			{
 				"name": "Hidden Block",
-				"access_rules": ["$hiddenBlocks, $canHitBlocks"],
+				"access_rules": ["^$hiddenBlocks, $canHitBlocks"],
 				"visibility_rules": ["$ch4Required"],
 				"item_count": 1
 			},
@@ -35,7 +35,7 @@
 				"sections": [
 					{
 						"name": "Hidden Block",
-						"access_rules": ["$hiddenBlocks, $canHitBlocks"],
+						"access_rules": ["^$hiddenBlocks, $canHitBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
@@ -69,7 +69,7 @@
 				"sections": [
 					{
 						"name": "Hidden Blocks",
-						"access_rules": ["$hiddenBlocks, $canHitBlocks"],
+						"access_rules": ["^$hiddenBlocks, $canHitBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 2
 					},
@@ -167,7 +167,7 @@
 			},
 			{
 				"name": "Hidden Block",
-				"access_rules": ["$hiddenBlocks, cake, [$cookingAvailable], [cakemix]", "$hiddenBlocks, [cake], $cookingAvailable, cakemix"],
+				"access_rules": ["^$hiddenBlocks, cake, [$cookingAvailable], [cakemix]", "^$hiddenBlocks, [cake], $cookingAvailable, cakemix"],
 				"visibility_rules": ["$ch4Required"],
 				"item_count": 1
 			},
@@ -236,13 +236,13 @@
 					},
 					{
 						"name": "Left Hidden Block",
-						"access_rules": ["$hiddenBlocks, $canHitBlocks"],
+						"access_rules": ["^$hiddenBlocks, $canHitBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
 					{
 						"name": "Right Hidden Block",
-						"access_rules": ["$hiddenBlocks, $canHitBlocks"],
+						"access_rules": ["^$hiddenBlocks, $canHitBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
@@ -311,11 +311,11 @@
 		"name": "Green Station",
 		"chest_unopened_img": "images/chests/generic.png",
 		"chest_opened_img": "images/chests/generic_checked.png",
-		"access_rules": ["$ToyBoxGreenAccess"],
+		"access_rules": ["^$ToyBoxGreenAccess"],
 		"sections": [
 			{
 				"name": "Hidden Block",
-				"access_rules": ["$hiddenBlocks"],
+				"access_rules": ["^$hiddenBlocks"],
 				"visibility_rules": ["$ch4Required"],
 				"item_count": 1
 			},
@@ -401,11 +401,11 @@
 		"name": "Red Station",
 		"chest_unopened_img": "images/chests/generic.png",
 		"chest_opened_img": "images/chests/generic_checked.png",
-		"access_rules": ["$ToyBoxRedAccess"],
+		"access_rules": ["^$ToyBoxRedAccess"],
 		"sections": [
 			{
 				"name": "Hidden Block",
-				"access_rules": ["$hiddenBlocks"],
+				"access_rules": ["^$hiddenBlocks"],
 				"visibility_rules": ["$ch4Required"],
 				"item_count": 1
 			},
@@ -431,7 +431,7 @@
 				"sections": [
 					{
 						"name": "Right Hidden Block",
-						"access_rules": ["$hiddenBlocks"],
+						"access_rules": ["^$hiddenBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
@@ -442,7 +442,7 @@
 					},
 					{
 						"name": "Hidden Block Between Coin Blocks",
-						"access_rules": ["$hiddenBlocks"],
+						"access_rules": ["^$hiddenBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
@@ -455,7 +455,7 @@
 					},
 					{
 						"name": "Hidden Block by Lantern Ghost Door",
-						"access_rules": ["$hiddenBlocks"],
+						"access_rules": ["^$hiddenBlocks"],
 						"visibility_rules": ["$ch4Required"],
 						"item_count": 1
 					},
@@ -505,7 +505,7 @@
 					},
 					{
 						"name": "Hidden Coin Block",
-						"access_rules": ["$hiddenBlocks"],
+						"access_rules": ["^$hiddenBlocks"],
 						"visibility_rules": ["coin_block_setting, $ch4Required"],
 						"chest_unopened_img": "images/chests/coin.png",
 						"chest_opened_img": "images/chests/coin_checked.png",

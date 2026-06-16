@@ -68,39 +68,66 @@
     "orientation": "vertical",
     "content": [
 			{
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+          {
+            "type": "group",
+            "header": "Goal Settings",
+            "content": [
+              {
+                "type": "itemgrid",
+                "h_alignment": "left",
+                "item_margin": "1,2",
+                "dropshadow": true,
+                "rows": [
+                  [ "seed_goal", "bowser_castle_mode", "starbeam_shuffle" ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Star Way",
+            "content": [
+              {
+                "type": "itemgrid",
+                "h_alignment": "left",
+                "item_margin": "1,2",
+                "dropshadow": true,
+                "rows": [
+                  [ "sw_spirits", "sw_powerstars" ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Star Beam",
+            "content": [
+              {
+                "type": "itemgrid",
+                "h_alignment": "left",
+                "item_margin": "1,2",
+                "dropshadow": true,
+                "rows": [
+                  [ "sb_spirits", "sb_powerstars" ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+			{
 				"type": "group",
-				"header": "LCL Chapters",
+				"header": "Chapter Spirit Requirements",
 				"content": [
 					{
 						"type": "itemgrid",
 						"h_alignment": "left",
 						"item_margin": "1,2",
 						"rows": [
-							[
-								"ch1_ss",
-								"ch2_ss",
-								"ch3_ss",
-								"ch4_ss",
-								"ch5_ss",
-								"ch6_ss",
-								"ch7_ss"
-							]
-						]
-					},
-					{
-						"type": "itemgrid",
-						"h_alignment": "left",
-						"item_margin": "1,2",
-						"rows": [
-							[
-								"ch1_lcl",
-								"ch2_lcl",
-								"ch3_lcl",
-								"ch4_lcl",
-								"ch5_lcl",
-								"ch6_lcl",
-								"ch7_lcl"
-							]
+							[ "spirit_requirements", "ch1_lcl", "ch2_lcl", "ch3_lcl", "ch4_lcl", "ch5_lcl", "ch6_lcl", "ch7_lcl" ]
 						]
 					}
 				]
@@ -133,16 +160,25 @@
         "header": "Presets",
         "content": [
           {
-            "type": "item",
-            "item": "blitz_preset"
-          },
-          {
-            "type": "item",
-            "item": "s1_race_preset"
-          },
-          {
-            "type": "item",
-            "item": "extreme_preset"
+            "type": "array",
+            "orientation": "horizontal",
+            "content": [
+              {
+                "type": "item",
+                "margin": "5,0",
+                "item": "blitz_preset"
+              },
+              {
+                "type": "item",
+                "margin": "5,0",
+                "item": "s1_race_preset"
+              },
+              {
+                "type": "item",
+                "margin": "5,0",
+                "item": "extreme_preset"
+              }
+            ]
           }
         ]
       },

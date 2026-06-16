@@ -45,7 +45,7 @@
 					},
 					{
 						"name": "Hidden Blocks",
-						"access_rules": ["$canHitBlocks, $hiddenBlocks"],
+						"access_rules": ["$canHitBlocks, ^$hiddenBlocks"],
 						"visibility_rules": ["$ch5Required"],
 						"item_count": 2
 					},
@@ -299,7 +299,7 @@
 					},
 					{
 						"name": "Hidden Block at North Exit",
-						"access_rules": ["$canHitBlocks, $sushie, $hiddenBlocks"],
+						"access_rules": ["$canHitBlocks, $sushie, ^$hiddenBlocks"],
 						"visibility_rules": ["$ch5Required"],
 						"item_count": 1
 					},
@@ -467,7 +467,7 @@
 								"sections": [
 									{
 										"name": "Hidden Block",
-										"access_rules": ["$canHitBlocks, $canClimbShortLedges, $hiddenBlocks"],
+										"access_rules": ["$canHitBlocks, $canClimbShortLedges, ^$hiddenBlocks"],
 										"visibility_rules": ["$ch5Required"],
 										"item_count": 1
 									},
@@ -500,7 +500,7 @@
 											{
 												"name": "Hidden Block",
 												"visibility_rules": ["$ch5Required"],
-												"access_rules": ["$canHitBlocks, $canClimbShortLedges, $hiddenBlocks"],
+												"access_rules": ["$canHitBlocks, $canClimbShortLedges, ^$hiddenBlocks"],
 												"item_count": 1
 											},
 											{

@@ -52,6 +52,7 @@
         "name": "Power Stars",
         "type": "consumable",
         "img": "images/star_spirits/Power_Star.png",
+        "overlay_background": "#000000",
         "max_quantity": 120,
         "codes": "power_star"
     },

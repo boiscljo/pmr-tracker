@@ -6,6 +6,10 @@ function itemStage(item)
     return Tracker:FindObjectForCode(item).CurrentStage
 end
 
+function itemCount(item)
+    return Tracker:ProviderCountForCode(item)
+end
+
 function canBreakYellowBlocks()
     return bombette() or hasItem("hammer")
 end
@@ -30,7 +34,7 @@ function hiddenBlocks()
     if watt() or hasItem("hidden_blocks_visible") then
         return true
     else
-        return true, AccessibilityLevel.SequenceBreak
+        return AccessibilityLevel.SequenceBreak
     end
 end
 
