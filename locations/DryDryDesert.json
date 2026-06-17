@@ -61,7 +61,7 @@
 				"sections": [
 					{
 						"name": "Roof Panel",
-						"access_rules": ["boots2, [lemon]", "hammer3, [lemon]"],
+						"access_rules": ["boots2, [lemon]", "boots, hammer3, [lemon]"],
 						"visibility_rules": ["panels_setting, $ch2Required"],
 						"chest_unopened_img": "images/chests/star_piece.png",
 						"chest_opened_img": "images/chests/star_piece_checked.png",
@@ -69,13 +69,13 @@
 					},
 					{
 						"name": "Roof Item",
-						"access_rules": ["[lemon]"],
+						"access_rules": ["boots, [lemon]"],
 						"visibility_rules": ["$ch2Required"],
 						"item_count": 1
 					},
 					{
 						"name": "Moustafa",
-						"access_rules": ["[lemon]"],
+						"access_rules": ["boots, [lemon]"],
 						"visibility_rules": ["$ch2Required"],
 						"item_count": 1
 					},
