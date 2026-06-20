@@ -421,7 +421,7 @@ function BowsersCastle2Access()
     if StarHavenAccess() then
         if itemCount("ch8_key") >= 2 and bombette() and bow() and parakarry() and lakilester() and watt() then
             return true
-        elseif itemCount("ch8_key") >= 1 and hasItem("bc_shortened") then
+        elseif hasItem("bc_shortened") then
             return true
         elseif itemCount("ch8_key") >= 1 then
             return AccessibilityLevel.SequenceBreak -- out of logic
@@ -433,9 +433,7 @@ end
 function BowsersCastle3Access()
     local a = BowsersCastle2Access()
     if sushie() and hasItem("boots3") and a ~= AccessibilityLevel.None then
-        if itemCount("ch8_key") >= 4 then
-            return a
-        elseif itemCount("ch8_key") >= 3 and hasItem("bc_shortened") then
+        if itemCount("ch8_key") >= 4 or hasItem("bc_shortened") then
             return a
         elseif itemCount("ch8_key") >= 3 then
             return AccessibilityLevel.SequenceBreak
@@ -450,9 +448,7 @@ function PeachsCastleAccess()
         return true
     end
     if a ~= AccessibilityLevel.None then
-        if itemCount("ch8_key") >= 5 then
-            return a
-        elseif itemCount("ch8_key") >= 4 and hasItem("bc_shortened") then
+        if itemCount("ch8_key") >= 5 or hasItem("bc_shortened") then
             return a
         elseif itemCount("ch8_key") >= 4 then
             return AccessibilityLevel.SequenceBreak
