@@ -8,6 +8,8 @@ AUTOTRACKER_ENABLE_LOCATION_TRACKING = true
 -- this is useful since remote items will not reset but local items might
 ScriptHost:LoadScript("scripts/ap_autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/ap_autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/ap_autotracking/tab_mapping.lua")
+
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -456,9 +458,28 @@ function onLocation(location_id, location_name)
 	end
 end
 
+function updateMap(area_id, map_id)
+    local key = tostring(area_id) .. "." .. tostring(map_id)
+    local tabs = TAB_MAPPING[key]
+    if tabs then
+        for _, tab in ipairs(tabs) do
+            Tracker:UiHint("ActivateTab", tab)
+        end
+    end
+end
+
+function onBounce(json)
+    local data = json["data"]
+    if data then
+        if data["type"] == "MapUpdate" then
+            updateMap(data["areaId"],data["mapId"])
+        end
+    end
+end
 
 -- add AP callbacks
 Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddBouncedHandler("bounce handler", onBounce)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
 end
