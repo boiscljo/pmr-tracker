@@ -1,187 +1,202 @@
 {
-	"versions": [
-		{
-			"package_version": "1.2.2",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.2/PaperMarioTrackerPhantom-1.2.2.zip",
-			"sha256": "FCA2C92384F008450872B37DD6CE8ECC0BDAB893A7416DECB206204CF657E04F",
-			"changelog": [
-        		"AP support for poptracker."
-			]
-		},
-		{
-			"package_version": "1.2.5",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.5/PaperMarioTrackerPhantom-1.2.5.zip",
-			"sha256": "478785389EC2ECB4AB7DFBBB0D342B0573EFCCCD74C90675D97CFD930D109AEA",
-			"changelog": [
-				"Logic fix for Jade Jungle."
-			]
-		},
-		{
-			"package_version": "1.2.6",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.6/PaperMarioTrackerPhantom.zip",
-			"sha256": "08B0905DF6F590EE5520371B90B79EAE2C50E6C1F6B48D12CC243AD08B4EAD05",
-			"changelog": [
-				"Missing coin location in Jade Jungle."
-			]
-		},
-		{
-			"package_version": "1.2.7",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.7/PaperMarioTrackerPhantom.zip",
-			"sha256": "ECA3547B2238C6A10ABEF539CC5A64AC4E103E049FA74AD22028AAC74578535E",
-			"changelog": [
-				"Dry Dry Ruins AP Location fix, two rooms were previously swapped by the autotracker."
-			]
-		},
-		{
-			"package_version": "1.2.10",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.10/PaperMarioTrackerPhantom.zip",
-			"sha256": "454B42991A07952BF1BD261ECC8F218A669FAD61EA7DC754F3774D37D009AED0",
-			"changelog": [
-				"Add new combination items for more compact views.",
-				"Add Star Beam item."
-			]
-		},
-		{
-			"package_version": "1.2.13",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.13/PaperMarioTrackerPhantom.zip",
-			"sha256": "CC71904EC7FA14BD6BD3A99856760CAFD12C58D43554C791FD45639FCD7C47B1",
-			"changelog": [
-				"Fix item and location autotracking for AP post star beam update."
-			]
-		},
-		{
-			"package_version": "1.2.14",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.14/PaperMarioTrackerPhantom.zip",
-			"sha256": "8D91D71F7CE432C6D30F931A65EBDE9666A5C850EFC606A0D2E1C56DE2481A90",
-			"changelog": [
-				"Minor scripting logic adjustments."
-			]
-		},
-		{
-			"package_version": "1.2.15",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.15/PaperMarioTrackerPhantom.zip",
-			"sha256": "B6257B3AF6AC35E34E8026CD55DD523F7278AD2A84E67B6F0BD1AB732DC629C6",
-			"changelog": [
-				"Minor logic fix for Toy Box Red Station access (missed case in 1.2.14)."
-			]
-		},
-		{
-			"package_version": "1.2.16",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.16/PaperMarioTrackerPhantom.zip",
-			"sha256": "4DBEF5B2EC3F5250250D87788D8779C2B3F0507E62031D17A414DFDC64FD10CE",
-			"changelog": [
-				"Minor logic fix for Toy Box Red Station access."
-			]
-		},
-		{
-			"package_version": "1.2.17",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.17/PaperMarioTrackerPhantom.zip",
-			"sha256": "B9138F43F0093B6F5825E7D903229F18D25E8FD44C9E3570D041354AE49D75FD",
-			"changelog": [
-				"Shrink the default item sizes to better accomodate low resolution displays.",
-				"Hide checks from the map if areas are marked as not needed for Limit Chapter Logic.",
-				"Poptracker: Add a world map for all checks on one single screen."
-			]
-		},
-		{
-			"package_version": "1.2.18",
-			"download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.18/PaperMarioTrackerPhantom.zip",
-			"sha256": "29BB721683B5F550D68F3CE294122FF43BA3EFC51C37447E64AF6B967917E15E",
-			"changelog": [
-				"AP location ID updates.",
-				"Add S3 Blitz Preset."
-			]
-		}
-        ,
-		{
-			"package_version": "1.2.19",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.19/pmrjuly.zip",
-			"sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
-			"changelog": [
-				"Fix for most ids and rules"
-			]
-		},
-		{
-			"package_version": "1.2.21",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.21/PaperMarioObsidian.zip",
-			"sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
-			"changelog": [
-				"Changes to AP item names"
-			]
-		},
-		{
-			"package_version": "1.2.22",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.22/PaperMarioObsidian.zip",
-			"sha256": "ad8131200e49589a7f4ba5b7f7599f6f9c4b18066ffecc24dfc10aa1c1b727dd",
-			"changelog": [
-				"Changes to AP item names"
-			]
-		},
-		{
-			"package_version": "1.2.23",
-			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.23/PaperMarioFouton.zip",
-			"sha256": "d7726052a2d1d0eead586562f85bc5f599e06425d23dc88581d182d732260a08",
-			"changelog": [
-				"Fixes to logic and code"
-			]
-		},
-		{
-			"package_version": "1.2.24",
-			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.24/PaperMarioFouton.zip",
-			"sha256": "4899844e455f0d7ed3d5645f0de04c29ce157eec499fc629c2e9350941e68c20",
-			"changelog": [
-				"Added Partner Upgrades to Tracker"
-			]
-		},
-		{
-			"package_version": "1.2.25",
-			"download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.25/PaperMarioFouton.zip",
-			"sha256": "03109a3f4cb9862e5230965113ed0b75de4809a958e66a853482d50f6bb260c0",
-			"changelog": [
-				"Small Logix Fixes"
-			]
-		},
-		{
-			"package_version": "1.2.26",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.26/pmr-tracker-1.2.26.zip",
-			"sha256": "cf7aa8a40e1ae82d508c0fc717c154834ee415bbdbbf4180d973279d859fec0f",
-			"changelog": [
-				"Settings Autotracking Fixes"
-			]
-		},
+    "versions": [
         {
-			"package_version": "1.2.27",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.27/pmr-tracker-1.2.27.zip",
-			"sha256": "64ae8a6b460b313ceafb664d66e630ce10f1a5fc9419d43eae8ffd93feb3b2f7",
-			"changelog": [
-				"Settings Autotracking Fixes"
-			]
-		},
-           {
-			"package_version": "1.2.28",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.28/pmr-tracker-1.2.28.zip",
-			"sha256": "68d2cbde487bd3b206906b200d9412c5c49de6c394eac3f0dbc153d1fc549b89",
-			"changelog": [
-				"Settings Autotracking Fixes"
-			]
-		}
-        ,
-           {
-			"package_version": "1.2.29",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.29/pmr-tracker-1.2.29.zip",
-			"sha256": "03b117735059601ebada093d550209fbc2bb68ec2e8dc4c43a579078f799431e",
-			"changelog": [
-				"Fix to partners"
-			]
-		},
-         {
-			"package_version": "1.2.30",
-			"download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.30/pmr-tracker-1.2.30.zip",
-			"sha256": "bfa4eeda27087d53226e6dff689ebb839d4724ce6d80a534a33bb410b4846bb1",
-			"changelog": [
-				"Fix to partners",
+            "package_version": "1.2.2",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.2/PaperMarioTrackerPhantom-1.2.2.zip",
+            "sha256": "FCA2C92384F008450872B37DD6CE8ECC0BDAB893A7416DECB206204CF657E04F",
+            "changelog": [
+                "AP support for poptracker."
+            ]
+        },
+        {
+            "package_version": "1.2.5",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.5/PaperMarioTrackerPhantom-1.2.5.zip",
+            "sha256": "478785389EC2ECB4AB7DFBBB0D342B0573EFCCCD74C90675D97CFD930D109AEA",
+            "changelog": [
+                "Logic fix for Jade Jungle."
+            ]
+        },
+        {
+            "package_version": "1.2.6",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.6/PaperMarioTrackerPhantom.zip",
+            "sha256": "08B0905DF6F590EE5520371B90B79EAE2C50E6C1F6B48D12CC243AD08B4EAD05",
+            "changelog": [
+                "Missing coin location in Jade Jungle."
+            ]
+        },
+        {
+            "package_version": "1.2.7",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.7/PaperMarioTrackerPhantom.zip",
+            "sha256": "ECA3547B2238C6A10ABEF539CC5A64AC4E103E049FA74AD22028AAC74578535E",
+            "changelog": [
+                "Dry Dry Ruins AP Location fix, two rooms were previously swapped by the autotracker."
+            ]
+        },
+        {
+            "package_version": "1.2.10",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.10/PaperMarioTrackerPhantom.zip",
+            "sha256": "454B42991A07952BF1BD261ECC8F218A669FAD61EA7DC754F3774D37D009AED0",
+            "changelog": [
+                "Add new combination items for more compact views.",
+                "Add Star Beam item."
+            ]
+        },
+        {
+            "package_version": "1.2.13",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.13/PaperMarioTrackerPhantom.zip",
+            "sha256": "CC71904EC7FA14BD6BD3A99856760CAFD12C58D43554C791FD45639FCD7C47B1",
+            "changelog": [
+                "Fix item and location autotracking for AP post star beam update."
+            ]
+        },
+        {
+            "package_version": "1.2.14",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.14/PaperMarioTrackerPhantom.zip",
+            "sha256": "8D91D71F7CE432C6D30F931A65EBDE9666A5C850EFC606A0D2E1C56DE2481A90",
+            "changelog": [
+                "Minor scripting logic adjustments."
+            ]
+        },
+        {
+            "package_version": "1.2.15",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.15/PaperMarioTrackerPhantom.zip",
+            "sha256": "B6257B3AF6AC35E34E8026CD55DD523F7278AD2A84E67B6F0BD1AB732DC629C6",
+            "changelog": [
+                "Minor logic fix for Toy Box Red Station access (missed case in 1.2.14)."
+            ]
+        },
+        {
+            "package_version": "1.2.16",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.16/PaperMarioTrackerPhantom.zip",
+            "sha256": "4DBEF5B2EC3F5250250D87788D8779C2B3F0507E62031D17A414DFDC64FD10CE",
+            "changelog": [
+                "Minor logic fix for Toy Box Red Station access."
+            ]
+        },
+        {
+            "package_version": "1.2.17",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.17/PaperMarioTrackerPhantom.zip",
+            "sha256": "B9138F43F0093B6F5825E7D903229F18D25E8FD44C9E3570D041354AE49D75FD",
+            "changelog": [
+                "Shrink the default item sizes to better accomodate low resolution displays.",
+                "Hide checks from the map if areas are marked as not needed for Limit Chapter Logic.",
+                "Poptracker: Add a world map for all checks on one single screen."
+            ]
+        },
+        {
+            "package_version": "1.2.18",
+            "download_url": "https://github.com/phantom5800/pmr-emotracker/releases/download/1.2.18/PaperMarioTrackerPhantom.zip",
+            "sha256": "29BB721683B5F550D68F3CE294122FF43BA3EFC51C37447E64AF6B967917E15E",
+            "changelog": [
+                "AP location ID updates.",
+                "Add S3 Blitz Preset."
+            ]
+        },
+        {
+            "package_version": "1.2.19",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.19/pmrjuly.zip",
+            "sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
+            "changelog": [
+                "Fix for most ids and rules"
+            ]
+        },
+        {
+            "package_version": "1.2.21",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.21/PaperMarioObsidian.zip",
+            "sha256": "2ff8e2cf5acdaefd469fa154aafe4415a08401a354c5b628d3d528968d41be5c",
+            "changelog": [
+                "Changes to AP item names"
+            ]
+        },
+        {
+            "package_version": "1.2.22",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.22/PaperMarioObsidian.zip",
+            "sha256": "ad8131200e49589a7f4ba5b7f7599f6f9c4b18066ffecc24dfc10aa1c1b727dd",
+            "changelog": [
+                "Changes to AP item names"
+            ]
+        },
+        {
+            "package_version": "1.2.23",
+            "download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.23/PaperMarioFouton.zip",
+            "sha256": "d7726052a2d1d0eead586562f85bc5f599e06425d23dc88581d182d732260a08",
+            "changelog": [
+                "Fixes to logic and code"
+            ]
+        },
+        {
+            "package_version": "1.2.24",
+            "download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.24/PaperMarioFouton.zip",
+            "sha256": "4899844e455f0d7ed3d5645f0de04c29ce157eec499fc629c2e9350941e68c20",
+            "changelog": [
+                "Added Partner Upgrades to Tracker"
+            ]
+        },
+        {
+            "package_version": "1.2.25",
+            "download_url": "https://github.com/Fouton/pmr-tracker/releases/download/V1.2.25/PaperMarioFouton.zip",
+            "sha256": "03109a3f4cb9862e5230965113ed0b75de4809a958e66a853482d50f6bb260c0",
+            "changelog": [
+                "Small Logix Fixes"
+            ]
+        },
+        {
+            "package_version": "1.2.26",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.26/pmr-tracker-1.2.26.zip",
+            "sha256": "cf7aa8a40e1ae82d508c0fc717c154834ee415bbdbbf4180d973279d859fec0f",
+            "changelog": [
+                "Settings Autotracking Fixes"
+            ]
+        },
+        {
+            "package_version": "1.2.27",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.27/pmr-tracker-1.2.27.zip",
+            "sha256": "64ae8a6b460b313ceafb664d66e630ce10f1a5fc9419d43eae8ffd93feb3b2f7",
+            "changelog": [
+                "Settings Autotracking Fixes"
+            ]
+        },
+        {
+            "package_version": "1.2.28",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.28/pmr-tracker-1.2.28.zip",
+            "sha256": "68d2cbde487bd3b206906b200d9412c5c49de6c394eac3f0dbc153d1fc549b89",
+            "changelog": [
+                "Settings Autotracking Fixes"
+            ]
+        },
+        {
+            "package_version": "1.2.29",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.29/pmr-tracker-1.2.29.zip",
+            "sha256": "03b117735059601ebada093d550209fbc2bb68ec2e8dc4c43a579078f799431e",
+            "changelog": [
+                "Fix to partners"
+            ]
+        },
+        {
+            "package_version": "1.2.30",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.30/pmr-tracker-1.2.30.zip",
+            "sha256": "bfa4eeda27087d53226e6dff689ebb839d4724ce6d80a534a33bb410b4846bb1",
+            "changelog": [
+                "Fix to partners",
                 "Change to lavalava island map"
-			]
-		}
-	]
+            ]
+        },
+        {
+            "package_version": "1.2.31",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.30/pmr-tracker-1.2.30.zip",
+            "sha256": "bfa4eeda27087d53226e6dff689ebb839d4724ce6d80a534a33bb410b4846bb1",
+            "changelog": [
+                "Added Star Haven, Bowser's Castle, and Peach's Castle maps",
+                "Renamed Lavalava Island tab to Jade Jungle",
+                "Added Goal Settings and Autotracking (Specific Spirits manually tracked in settings)",
+                "Changed Magical Seeds Required to toggle a setting instead of starting seed count",
+                "Added KBF back outdoor chest to World Map",
+                "Added Tubba Bedroom Chest to World Map",
+                "Fixed Region Access scripts to properly allocate out of logic to many regions",
+                "Fixed Hidden Blocks logic showing out of logic",
+                "Implemented Starting locations",
+                "Added Star Pieces for Merlow Reward tracking, and split the checks up"
+            ]
+        }
+    ]
 }
