@@ -197,7 +197,7 @@
 												"sections": [
 													{
 														"name": "Item on Ledge",
-														"access_rules": ["hammer2", "ch2_key:4"],
+														"access_rules": ["hammer2, [$bombette]", "ch2_key:4"],
 														"visibility_rules": ["$ch2Required"],
 														"item_count": 1
 													}

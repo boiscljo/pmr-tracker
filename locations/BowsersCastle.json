@@ -194,10 +194,11 @@
 					},
 					{
 						"name": "Left Water Puzzle",
-						"access_rules": ["$sushie, boots3"],
+						"visibility_rules": ["bc_vanilla"],
 						"sections": [
 							{
 								"name": "Top Left Ledge",
+								"access_rules": ["$sushie, boots3"],
 								"item_count": 1
 							}
 						],
@@ -211,10 +212,11 @@
 					},
 					{
 						"name": "Right Water Puzzle",
-						"access_rules": ["$sushie, boots3"],
+						"access_rules": ["$sushie, boots3", "bc_shortened"],
 						"sections": [
 							{
 								"name": "Hidden Block",
+								"visibility_rules": ["bc_vanilla"],
 								"access_rules": ["^$hiddenBlocks"],
 								"item_count": 1
 							}
@@ -229,7 +231,7 @@
 						"children": [
 							{
 								"name": "Hidden Door Room",
-								"access_rules": ["[ch8_key:3], ch8_key:2", "ch8_key:2, bc_shortened"],
+								"access_rules": ["[ch8_key:3], ch8_key:2", "bc_shortened"],
 								"sections": [
 									{
 										"name": "Hidden Block",
@@ -251,10 +253,11 @@
 							},
 							{
 								"name": "Hidden Key Room",
-								"access_rules": ["[ch8_key:3], ch8_key:2", "ch8_key:2, bc_shortened"],
+								"access_rules": ["[ch8_key:3], ch8_key:2", "bc_shortened"],
 								"sections": [
 									{
 										"name": "Ground Key",
+										"visibility_rules": ["bc_vanilla"],
 										"item_count": 1
 									}
 								],
@@ -326,6 +329,7 @@
 										"sections": [
 											{
 												"name": "Ground Key",
+												"visibility_rules": ["bc_vanilla"],
 												"item_count": 1
 											}
 										],
