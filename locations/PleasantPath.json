@@ -129,7 +129,7 @@
 			},
 			{
 				"name": "Tall Block Item",
-				"access_rules": ["boots2", "$kooper"],
+				"access_rules": ["boots2, [boots3]", "$kooper"],
 				"visibility_rules": ["$ch1Required"],
 				"capture_item": true,
 				"item_count": 1

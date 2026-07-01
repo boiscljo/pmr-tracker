@@ -154,6 +154,28 @@
         "loop": true,
         "codes": "dungeon_setting"
     },
+    {
+        "name": "Random Puzzles",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "codes": "puzzles_setting",
+        "stages": [
+            {
+                "name": "Vanilla Puzzles", 
+                "img": "images/settings/puzzle.png",
+                "img_mods": "overlay|images/settings/no120.png",
+                "codes": "vanilla_puzzles",
+                "inherit_codes": false
+            },
+            {
+                "name": "Random Puzzles", 
+                "img": "images/settings/puzzle.png",
+                "codes": "random_puzzles",
+                "inherit_codes": false
+            }
+        ]
+    },
 
     {
         "name": "Starting Map",

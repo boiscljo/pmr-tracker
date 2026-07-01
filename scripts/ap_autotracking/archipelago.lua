@@ -40,6 +40,8 @@ function onClear(slot_data)
         end
     end
     -- reset items
+    local letter_obj = Tracker:FindObjectForCode("letters")
+    letter_obj.AcquiredCount = 0
     for _, v in pairs(ITEM_MAPPING) do
         if v[1] and v[2] then
             if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -372,6 +374,13 @@ function onItem(index, item_id, item_name, player_number)
     if not v[1] then
         return
     end
+
+    if item_name:find("Letter to") ~= nil then
+        local letter_obj = Tracker:FindObjectForCode("letters")
+        letter_obj.AcquiredCount = letter_obj.AcquiredCount + 1
+    end
+
+
     local obj = Tracker:FindObjectForCode(v[1])
     if obj then
         if v[2] == "toggle" then
