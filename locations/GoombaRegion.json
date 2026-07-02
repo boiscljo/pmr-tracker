@@ -365,7 +365,7 @@
 			{
 				"name": "Multicoin Block",
 				"access_rules": [],
-				"visibility_rules": ["upgrades_setting, multicoin_setting"],
+				"visibility_rules": ["multicoin_setting"],
 				"clear_as_group": false,
 				"item_count": 1
 			},

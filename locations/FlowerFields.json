@@ -341,7 +341,7 @@
 							{
 								"name": "Multicoin Block",
 								"access_rules": ["$canHitBlocks"],
-								"visibility_rules": ["upgrades_setting, multicoin_setting, $ch6Required"],
+								"visibility_rules": ["multicoin_setting, $ch6Required"],
 								"item_count": 1
 							}
 						],
