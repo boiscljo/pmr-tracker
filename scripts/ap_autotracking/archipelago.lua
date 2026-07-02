@@ -15,6 +15,7 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+PREVIOUS_BOUNCE = ""
 
 function onClear(slot_data)
     print("starting onClear")
@@ -463,7 +464,12 @@ function updateMap(area_id, map_id)
     local tabs = TAB_MAPPING[key]
     if tabs then
         for _, tab in ipairs(tabs) do
-            Tracker:UiHint("ActivateTab", tab)
+            local obj = Tracker:FindObjectForCode("auto_map_setting")
+            print("Setting Stage: ".. obj.CurrentStage .. ", tab: " .. tab .. ", last bounce: " .. PREVIOUS_BOUNCE .. "")
+            if obj.CurrentStage == 2 or (obj.CurrentStage == 1 and tab ~= PREVIOUS_BOUNCE) then
+                Tracker:UiHint("ActivateTab", tab)
+            end
+            PREVIOUS_BOUNCE = tab
         end
     end
 end

@@ -336,5 +336,35 @@
         "max_quantity": 120,
         "codes": "sb_powerstars",
         "loop": true
+    },
+    {
+        "name": "Automatic Map Switching",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 2,
+        "codes": "auto_map_setting",
+        "stages": [
+            {
+                "name": "Automatic Map Switching: Off", 
+                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "img_mods": "@disabled, overlay|images/settings/off.png",
+                "codes": "auto_map_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Automatic Map Switching: On Map Change", 
+                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "img_mods": "overlay|images/settings/map.png",
+                "codes": "auto_map_regional",
+                "inherit_codes": false
+            },
+            {
+                "name": "Automatic Map Switching: On Room Change", 
+                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "img_mods": "overlay|images/settings/room.png",
+                "codes": "auto_map_room",
+                "inherit_codes": false
+            }
+        ]
     }
 ]
