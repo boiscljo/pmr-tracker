@@ -345,26 +345,33 @@
         "codes": "auto_map_setting",
         "stages": [
             {
-                "name": "Automatic Map Switching: Off", 
-                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "name": "Map Swapping: Off", 
+                "img": "images/settings/RegionMap.png",
                 "img_mods": "@disabled, overlay|images/settings/off.png",
                 "codes": "auto_map_off",
                 "inherit_codes": false
             },
             {
-                "name": "Automatic Map Switching: On Map Change", 
-                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "name": "Map Swapping: Per Map", 
+                "img": "images/settings/RegionMap.png",
                 "img_mods": "overlay|images/settings/map.png",
                 "codes": "auto_map_regional",
                 "inherit_codes": false
             },
             {
-                "name": "Automatic Map Switching: On Room Change", 
-                "img": "images/toadtown/Cook_Book_Paper_Mario.png",
+                "name": "Map Swapping: Per Room Load", 
+                "img": "images/settings/RegionMap.png",
                 "img_mods": "overlay|images/settings/room.png",
                 "codes": "auto_map_room",
                 "inherit_codes": false
-            }
+            }/*,
+            {
+                "name": "Individual Room Swapping", 
+                "img": "images/settings/RoomMap.png",
+                "img_mods": "overlay|images/settings/room.png",
+                "codes": "auto_room",
+                "inherit_codes": false
+            }*/
         ]
     }
 ]

@@ -465,11 +465,14 @@ function updateMap(area_id, map_id)
     if tabs then
         for _, tab in ipairs(tabs) do
             local obj = Tracker:FindObjectForCode("auto_map_setting")
-            print("Setting Stage: ".. obj.CurrentStage .. ", tab: " .. tab .. ", last bounce: " .. PREVIOUS_BOUNCE .. "")
-            if obj.CurrentStage == 2 or (obj.CurrentStage == 1 and tab ~= PREVIOUS_BOUNCE) then
-                Tracker:UiHint("ActivateTab", tab)
+            if obj.CurrentStage > 0 then
+                if obj.CurrentStage == 3 then
+                    -- For individual Room Maps when theyre added
+                elseif obj.CurrentStage == 2 or tab ~= PREVIOUS_BOUNCE then
+                    Tracker:UiHint("ActivateTab", tab) -- For only swapping to region maps
+                end
+                PREVIOUS_BOUNCE = tab
             end
-            PREVIOUS_BOUNCE = tab
         end
     end
 end
