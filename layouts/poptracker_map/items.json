@@ -189,6 +189,10 @@
 			{
 				"type": "layout",
 				"key": "open_flags"
+			},
+			{
+				"type": "layout",
+				"key": "pack_settings"
 			}
     ]
   }

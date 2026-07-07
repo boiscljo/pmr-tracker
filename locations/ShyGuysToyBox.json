@@ -211,7 +211,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["cake, [$cookingAvailable], [cakemix]", "[cake], $cookingAvailable, cakemix"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
+						"visibility_rules": ["multicoin_setting, $ch4Required"],
 						"item_count": 1
 					}
 				],
@@ -369,7 +369,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["$bow, $parakarry, boots"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
+						"visibility_rules": ["multicoin_setting, $ch4Required"],
 						"item_count": 1
 					},
 					{
@@ -437,7 +437,7 @@
 					},
 					{
 						"name": "Multicoin Block",
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
+						"visibility_rules": ["multicoin_setting, $ch4Required"],
 						"item_count": 1
 					},
 					{
@@ -461,7 +461,7 @@
 					},
 					{
 						"name": "Upgrade Block",
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch4Required"],
+						"visibility_rules": ["upgrades_setting, $ch4Required"],
 						"item_count": 1
 					}
 				],

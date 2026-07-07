@@ -41,8 +41,8 @@
         "toy_train",
         "jade_raven",
         "seeds",
-        "soil",
-        "bean"
+        "bean",
+        "soil"
       ],
       [
         "water",
@@ -334,6 +334,22 @@
             "required_seeds",
             "open_ch7_bridge",
             "starting_map"
+          ]
+        ]
+      }
+    ]
+  },
+  "pack_settings": {
+    "type": "group",
+    "header": "Pack Settings",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "auto_map_setting"
           ]
         ]
       }

@@ -15,6 +15,7 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+PREVIOUS_BOUNCE = ""
 
 function onClear(slot_data)
     print("starting onClear")
@@ -23,6 +24,7 @@ function onClear(slot_data)
     end
     SLOT_DATA = slot_data
     CUR_INDEX = -1
+    PREVIOUS_BOUNCE = "" -- clears map swapping data so it will bounce on the first new bounce
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -463,7 +465,17 @@ function updateMap(area_id, map_id)
     local tabs = TAB_MAPPING[key]
     if tabs then
         for _, tab in ipairs(tabs) do
-            Tracker:UiHint("ActivateTab", tab)
+            local obj = Tracker:FindObjectForCode("auto_map_setting")
+            if obj.CurrentStage > 0 then
+                if obj.CurrentStage == 3 then
+                    -- For individual Room Maps when theyre added
+                elseif obj.CurrentStage == 2 or tab ~= PREVIOUS_BOUNCE then
+                    Tracker:UiHint("ActivateTab", tab) -- For only swapping to region maps
+                end
+                PREVIOUS_BOUNCE = tab
+            else
+                PREVIOUS_BOUNCE = "" -- Clears bounce so that the next bounce always swaps once the setting is turned back on
+            end
         end
     end
 end

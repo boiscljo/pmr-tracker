@@ -179,7 +179,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					},
 					{
@@ -235,7 +235,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					},
 					{
@@ -329,13 +329,13 @@
 					{
 						"name": "Second From the Right",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					},
 					{
 						"name": "Third From the Right",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					}
 				],
@@ -515,7 +515,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					}
 				],
@@ -618,7 +618,7 @@
 					{
 						"name": "Middle Block",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					}
 				],
@@ -651,7 +651,7 @@
 					{
 						"name": "Multicoin Block",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"item_count": 1
 					}
 				],
@@ -759,7 +759,7 @@
 					{
 						"name": "Multicoin Blocks",
 						"access_rules": ["$canHitBlocks"],
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch2Required"],
+						"visibility_rules": ["multicoin_setting, $ch2Required"],
 						"clear_as_group": true,
 						"item_count": 6
 					},

@@ -61,7 +61,7 @@
 			{
 				"name": "Multicoin Block",
 				"access_rules": ["$canBreakYellowBlocks, $canClimbShortLedges, $canHitBlocks"],
-				"visibility_rules": ["upgrades_setting, multicoin_setting, $ch1Required"],
+				"visibility_rules": ["multicoin_setting, $ch1Required"],
 				"item_count": 1
 			}
 		],

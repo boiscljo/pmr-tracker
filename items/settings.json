@@ -336,5 +336,42 @@
         "max_quantity": 120,
         "codes": "sb_powerstars",
         "loop": true
+    },
+    {
+        "name": "Automatic Map Switching",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 2,
+        "codes": "auto_map_setting",
+        "stages": [
+            {
+                "name": "Map Swapping: Off", 
+                "img": "images/settings/RegionMap.png",
+                "img_mods": "@disabled, overlay|images/settings/off.png",
+                "codes": "auto_map_off",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Swapping: Per Map", 
+                "img": "images/settings/RegionMap.png",
+                "img_mods": "overlay|images/settings/map.png",
+                "codes": "auto_map_regional",
+                "inherit_codes": false
+            },
+            {
+                "name": "Map Swapping: Per Room Load", 
+                "img": "images/settings/RegionMap.png",
+                "img_mods": "overlay|images/settings/room.png",
+                "codes": "auto_map_room",
+                "inherit_codes": false
+            }/*,
+            {
+                "name": "Individual Room Swapping", 
+                "img": "images/settings/RoomMap.png",
+                "img_mods": "overlay|images/settings/room.png",
+                "codes": "auto_room",
+                "inherit_codes": false
+            }*/
+        ]
     }
 ]

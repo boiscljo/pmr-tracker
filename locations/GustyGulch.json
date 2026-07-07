@@ -119,7 +119,7 @@
 					},
 					{
 						"name": "Multicoin Block",
-						"visibility_rules": ["upgrades_setting, multicoin_setting, $ch3Required"],
+						"visibility_rules": ["multicoin_setting, $ch3Required"],
 						"item_count": 1
 					},
 					{
