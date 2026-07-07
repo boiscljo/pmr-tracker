@@ -183,8 +183,8 @@
         },
         {
             "package_version": "1.2.31",
-            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.30/pmr-tracker-1.2.30.zip",
-            "sha256": "bfa4eeda27087d53226e6dff689ebb839d4724ce6d80a534a33bb410b4846bb1",
+            "download_url": "https://github.com/boiscljo/pmr-tracker/releases/download/1.2.31/pmr-tracker-1.2.31.zip",
+            "sha256": "9b8f9c5d1cf8a38defed678451d4a3a6879448bd5bee2fdc0ad07b066b87a9b1",
             "changelog": [
                 "Added Star Haven, Bowser's Castle, and Peach's Castle maps",
                 "Renamed Lavalava Island tab to Jade Jungle",
