@@ -267,6 +267,13 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['starting_map'] then
+        local obj = Tracker:FindObjectForCode('starting_map')
+        if obj then
+            obj.CurrentStage = slot_data['starting_map']
+        end
+    end
+
     -- seed_goal -> if open star way, hide all checks in sh/bc/pc
     if slot_data['seed_goal'] then
         local obj = Tracker:FindObjectForCode('seed_goal')
